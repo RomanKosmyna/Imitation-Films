@@ -1,0 +1,67 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 5px solid aqua;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 2em;
+}
+
+.logoImg {
+    height: 80%;
+    border-radius: 50%;
+}
+
+.logo  h1 {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+    padding-left: .5em;
+}
+
+.logo a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.navigate > a {
+    text-decoration: none;
+    margin: 0 3em;
+    color: darkblue;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navigate > a[class='active'] {
+    padding-bottom: .9em;
+    border-bottom: .3em solid darkred;
+}
+
+.navigate > a:hover {
+    color: darkorange;
+}
+
+.searchbarSettings {
+    height: 100%;
+    display: flex;
+}
+
+.themeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.themeBtn svg {
+    width: 34px;
+    border: 4px solid darkblue;
+    background: yellow;
+}
