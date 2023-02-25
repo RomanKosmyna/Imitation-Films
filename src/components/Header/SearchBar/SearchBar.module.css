@@ -1,0 +1,167 @@
+/*.Search input {*/
+/*    background: var(--bg);*/
+/*    border: 0;*/
+/*    border-radius: 10px 0 0 10px;*/
+/*    color: var(--white);*/
+/*    font-size: 18px;*/
+/*    padding: 10px;*/
+/*    height: 24px;*/
+/*    width: 250px;*/
+/*}*/
+
+/*input:focus {*/
+/*    outline: none;*/
+/*}*/
+
+/*.searchInputs {*/
+/*    height: 100%;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    margin-right: 5em;*/
+/*}*/
+
+/*.searchIcon {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    height: 34px;*/
+/*    width: 40px;*/
+/*    background: var(--bg);*/
+/*    border-radius: 0 10px 10px 0;*/
+/*    padding: 5px;*/
+/*}*/
+
+/*.searchIcon svg {*/
+/*    height: 30px;*/
+/*    font-size: 35px;*/
+/*    color: var(--white);*/
+/*}*/
+
+/*.searchResult {*/
+/*    position: absolute;*/
+/*    width: 750px;*/
+/*    height: 600px;*/
+/*    top: 7em;*/
+/*    right: 35em;*/
+/*    background: var(--bg);*/
+/*    box-shadow: rgba(0,0,0,0.35);*/
+/*    overflow: hidden;*/
+/*    overflow-y: auto;*/
+/*    z-index: 10;*/
+/*    box-sizing: border-box;*/
+/*    border: 5px solid crimson;*/
+/*    border-radius: 12px;*/
+/*}*/
+
+/*.searchResult > a {*/
+/*    text-decoration: none;*/
+/*    transition-duration: 350ms;*/
+/*}*/
+
+/*.searchResult > a:hover {*/
+/*    border-radius: 10px;*/
+/*    background-color:  #333333;*/
+/*    transform: scale(0.9);*/
+/*}*/
+
+/*#clearBtn {*/
+/*    cursor: pointer;*/
+/*}*/
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+}
+
+.searchResultContainer {
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    overflow: auto;
+    top: 88px;
+    right: 310px;
+    background: var(--profile-background);
+    border: var(--profile-border);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.searchResult {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 5px 0;
+    padding: 3px;
+    transition: 350ms;
+}
+
+.searchResult:hover {
+    background-color: var(--profile-menu-hover);
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.searchResult > img {
+    width: 50px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.movieInfo {
+    margin-left: 10px;
+}
+
+.movieInfo > p {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.title {
+    color: var(--header-navigation);
+}
+
+.releaseDate {
+    color: snow;
+}
+
+/*  Search Bar  */
+.searchBar {
+    display: flex;
+}
+
+.searchBar > input {
+    background-color: snow;
+    border: none;
+    padding-left: 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 1.1rem;
+}
+
+.searchIcon > svg {
+    width: 50px;
+    color: var(--header-navigation);
+}
+
+.searchIcon {
+    background-color: snow;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+

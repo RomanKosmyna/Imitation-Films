@@ -1,8 +1,8 @@
 import {Link, NavLink} from "react-router-dom";
 import styles from './Header.module.css';
-import logo from '../../images/logo.png';
-import {SearchBar} from "../SearchBar/SearchBar";
-import {MoonIcon} from "@heroicons/react/24/outline";
+import logo from '../../../images/logo.png';
+import {SearchMovie} from "../SearchBar/SearchBar";
+import {ProfileMenu} from "../../ProfileMenu/ProfileMenu";
 
 const Header = () => {
 
@@ -16,17 +16,27 @@ const Header = () => {
             </div>
 
             <div className={styles.navigate}>
-                <NavLink to={'/'}>Home</NavLink>
-                <NavLink to={'/genres'}>Genres</NavLink>
-                <NavLink to={'/yourfilms'}>Your Films</NavLink>
+                <NavLink to={'movie'}>
+                    Movies
+                </NavLink>
+
+
+                <NavLink to={'/genres'}>
+                    Genres
+                </NavLink>
+
+
+                <NavLink to={'/watchlist'}>
+                    Your Watchlist
+                </NavLink>
             </div>
 
             <div className={styles.searchbarSettings}>
-                <SearchBar/>
-                <div className={styles.themeBtn}>
-                    <MoonIcon/>
+                <SearchMovie/>
+
+                <div className={styles.profileMenu}>
+                    <ProfileMenu/>
                 </div>
-                <div>USER</div>
             </div>
         </div>
     );

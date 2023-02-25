@@ -1,13 +1,16 @@
 .Header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    border-bottom: 5px solid aqua;
+    border-bottom: var(--header-border-bottom);
     box-sizing: border-box;
+    background-color: var(--header-background);
 }
 
 .logo {
+    width: 30%;
     display: flex;
     align-items: center;
     height: 100%;
@@ -20,7 +23,7 @@
 }
 
 .logo  h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 900;
     margin: 0;
     padding-left: .5em;
@@ -28,40 +31,52 @@
 
 .logo a {
     text-decoration: none;
-    color: darkblue;
+    color: var(--website-name);
+}
+
+.navigate {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navigate > a {
     text-decoration: none;
-    margin: 0 3em;
-    color: darkblue;
+    margin: 0 .8em;
+    color: var(--header-navigation);
     font-size: 24px;
     font-weight: 700;
+    display: flex;
+    align-items: center;
 }
 
 .navigate > a[class='active'] {
-    padding-bottom: .9em;
-    border-bottom: .3em solid darkred;
+    text-decoration: underline 5px var(--nav-underline);
+    text-underline-offset: 22px;
 }
 
 .navigate > a:hover {
-    color: darkorange;
+    color: var(--nav-hover);
 }
 
 .searchbarSettings {
+    width: 26%;
     height: 100%;
     display: flex;
+    justify-content: space-between;
+    margin-right: 2em;
 }
 
-.themeBtn {
+.user {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 10px;
+    margin-right: 2em;
 }
 
-.themeBtn svg {
-    width: 34px;
-    border: 4px solid darkblue;
-    background: yellow;
+.profileMenu {
+    display: flex;
+    align-items: center;
 }

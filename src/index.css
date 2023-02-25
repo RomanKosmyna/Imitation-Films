@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -9,5 +11,114 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+
+:root {
+  --background: #151616;
+  --header-background: #050401;
+  --header-navigation: crimson;
+  --header-border-bottom: 5px solid #FFFAFF;
+  --website-name: snow;
+  --nav-underline: snow;
+  --nav-hover: snow;
+  --profile-background: #151616;
+  --profile-border: 5px solid crimson;
+  --profile-menu-hover: #525357;
+  --movieInfo-text-color: snow;
+  --genreBar-navigation-text: snow;
+  --bg:  #242526;
+  --nav-size: 60px;
+  --border-radius: 8px;
+  --speed: 500ms;
+  --text-primary: #FFFFFF;
+  --footer-bottom-text: #FFFFFF;
+}
+
+[data-theme='light'] {
+  --background: #FDF0D5;
+  --header-background: #3B429F;
+  --header-navigation: #EDAE49;
+  --header-border-bottom: 5px solid #AFB3F7;
+  --website-name: #1B98E0;
+  --nav-underline: darkorange;
+  --nav-hover: #280003;
+  --profile-background: #1B98E0;
+  --profile-border: 5px solid crimson;
+  --profile-menu-hover: #3B429F;
+  --movieInfo-text-color: crimson;
+  --genreBar-navigation-text: #EDAE49;
+  --text-primary: #000;
+  --footer-bottom-text: #FFFFFF;
+}
+
+.app {
+  background-color: var(--background);
+  transition: all 350ms;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  font-family: roboto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+html {
+  overflow: scroll
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.menuBtn {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 34%;
+  left: 0;
+  right: 0;
+  margin: 0 14px;
+}
+
+.menuBtn > button {
+  width: 60px;
+  opacity: 0.5;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 55px;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+}
+
+.menuBtn > button:hover {
+  opacity: 1;
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }

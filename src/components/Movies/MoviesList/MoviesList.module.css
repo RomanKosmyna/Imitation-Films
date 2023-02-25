@@ -1,0 +1,11 @@
+.moviesListContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.moviesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
