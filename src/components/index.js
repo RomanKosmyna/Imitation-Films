@@ -6,7 +6,6 @@ export * from './GenresComponent/GenreBadge/GenreBadge';
 export * from './GenresComponent/Genres/Genres';
 export * from './Header/Header/Header';
 export * from './Header/SearchBar/SearchBar';
-export * from './LoadingSpinner/LoadingSpinner';
 export * from './Movies/Movie/Movie';
 export * from './Movies/MovieInfo/MovieInfo';
 export * from './Movies/MovieListCard/MovieListCard';

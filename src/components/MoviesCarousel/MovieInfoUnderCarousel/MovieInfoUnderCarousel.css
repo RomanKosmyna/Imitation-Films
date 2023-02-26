@@ -1,9 +1,9 @@
 .movieInfoUnderCarouselContainer {
     position: absolute;
-    bottom: 158px;
+    bottom: 200px;
     left: 350px;
-    width: 900px;
-    height: 240px;
+    width: 800px;
+    height: 13%;
     display: flex;
 }
 
@@ -12,7 +12,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 28px;
 }
 
 .movieInfoCarouselPoster {
@@ -35,7 +34,7 @@
     padding: 5px;
     text-align: justify;
     color: var(--text-primary);
-    font-size: 17px;
+    font-size: 13px;
 }
 
 .movieInfoCarouselLink {

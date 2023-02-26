@@ -14,7 +14,7 @@ import {popularMoviesActions} from "../../../redux";
 import {MovieInfoUnderCarousel} from "../MovieInfoUnderCarousel/MovieInfoUnderCarousel";
 
 const PopularMoviesCarousel = () => {
-    const {popularMovies: {results}, loading} = useSelector(state => state.popularMovies)
+    const {popularMovies: {results}} = useSelector(state => state.popularMovies)
     const {movieInfo} = useSelector(state => state.clickedSlider);
     const dispatch = useDispatch();
 

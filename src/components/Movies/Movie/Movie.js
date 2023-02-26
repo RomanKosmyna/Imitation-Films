@@ -69,7 +69,7 @@ const Movie = ({movie}) => {
                 </div>
                 <div className={styles.photos}>
                     <div className={styles.backdropPoster}>
-                        <PosterPreview poster={backdrop_path} alt={title}/>
+                        {backdrop_path !== null && <PosterPreview poster={backdrop_path} alt={title}/>}
                     </div>
                     <div className={styles.allPhotos}>
                         <PhotoIcon className={styles.photoIcon}/>
