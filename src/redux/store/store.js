@@ -1,11 +1,10 @@
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
-
-import {allMoviesReducer} from "../slices/allMoviesSlice/allMoviesSlice";
+import {allMoviesReducer} from "../actions/getMovies/allMoviesSlice";
 import {popularMoviesReducer} from "../slices/popularMoviesSlice/popularMoviesSlice";
-import {genresReducer} from "../slices/genresSlice/genresSlice";
+import {genresReducer} from "../actions/getGenres/genresSlice";
 import {searchReducer} from "../actions/movieSearch/movieSearch";
 import isDarkModeReducer from "../actions/themeToggle/themeToggle";
-import {watchlistReducer} from "../slices/watchlistSlice/watchlistSlice";
+import {clickedReducer} from "../actions/clickedSlider/clickedSlider";
 
 const rootReducer = combineReducers({
     allMovies: allMoviesReducer,
@@ -13,7 +12,7 @@ const rootReducer = combineReducers({
     genres: genresReducer,
     search: searchReducer,
     theme: isDarkModeReducer,
-    watchlist: watchlistReducer
+    clickedSlider: clickedReducer
 });
 
 const setupStore = () => configureStore({

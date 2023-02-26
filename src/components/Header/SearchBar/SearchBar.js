@@ -1,18 +1,18 @@
-import {useEffect, useRef, useState} from "react";
-import {Link} from "react-router-dom";
-import {useDispatch, useSelector} from "react-redux";
-import {searchActions} from "../../../redux/actions/movieSearch/movieSearch";
 import {PosterPreview} from "../../PosterPreview/PosterPreview";
 import {StartRating} from "../../StarsRating/StartRating";
+import {useDispatch, useSelector} from "react-redux";
+import {useEffect, useRef, useState} from "react";
+import {searchActions} from "../../../redux";
+import {Link} from "react-router-dom";
 
 import {MagnifyingGlassIcon, XMarkIcon} from "@heroicons/react/24/solid";
 
 import styles from './SearchBar.module.css';
 
 const SearchMovie = () => {
+    const {searchedMovie} = useSelector(state => state.search);
     const dispatch = useDispatch();
     const ref = useRef(null);
-    const {searchedMovie} = useSelector(state => state.search);
 
     const [searchValue, setSearchValue] = useState([]);
 

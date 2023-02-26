@@ -1,14 +1,15 @@
 import {PosterPreview} from "../../PosterPreview/PosterPreview";
-import {GenreBadge} from "../../GenreBadge/GenreBadge";
 import {StartRating} from "../../StarsRating/StartRating";
+import {GenreBadge} from "../../GenreBadge/GenreBadge";
+import {Trailer} from "../../Trailer/Trailer";
 import {Link} from "react-router-dom";
+import {motion} from "framer-motion";
+import {useState} from "react";
 
 import styles from './Movie.module.css';
 
 import {PhotoIcon, UserGroupIcon} from "@heroicons/react/24/outline";
 import {CheckIcon, PlusIcon} from "@heroicons/react/24/solid";
-import {useState} from "react";
-import {Trailer} from "../../Trailer/Trailer";
 
 const Movie = ({movie}) => {
     const addMovie = () => {
@@ -28,7 +29,11 @@ const Movie = ({movie}) => {
     const [saved, setSaved] = useState(false);
 
     return (
-        <div className={styles.container}>
+        <motion.div className={styles.container}
+             initial={{opacity: 0}}
+             animate={{opacity: 1}}
+             exit={{opacity: 0}}
+        >
             <div className={styles.movieInfoContainer}>
                 <div className={styles.movieTitle}>
                     <h2>{title}</h2>
@@ -78,7 +83,7 @@ const Movie = ({movie}) => {
                         {genres ? genres.map(genre => <GenreBadge key={genre.id} genre={genre}/>): null}
                     </div>
                     <div>
-                        <p>{overview}</p>
+                        <p className={styles.description}>{overview}</p>
                     </div>
                 </div>
                 <div className={styles.usersVotes}>
@@ -99,7 +104,7 @@ const Movie = ({movie}) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

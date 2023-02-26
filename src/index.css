@@ -33,6 +33,10 @@ code {
   --speed: 500ms;
   --text-primary: #FFFFFF;
   --footer-bottom-text: #FFFFFF;
+  --movie-card-color: #242526;
+  --overview-text-size: 20px;
+  --genre-badge-color: darkorange;
+  --genre-badge-background: #333333;
 }
 
 [data-theme='light'] {
@@ -43,13 +47,17 @@ code {
   --website-name: #1B98E0;
   --nav-underline: darkorange;
   --nav-hover: #280003;
-  --profile-background: #1B98E0;
+  --profile-background: #AFB3F7;
   --profile-border: 5px solid crimson;
   --profile-menu-hover: #3B429F;
   --movieInfo-text-color: crimson;
   --genreBar-navigation-text: #EDAE49;
   --text-primary: #000;
   --footer-bottom-text: #FFFFFF;
+  --movie-card-color: #242526;
+  --overview-text-size: 20px;
+  --genre-badge-color: red;
+  --genre-badge-background: #333333;
 }
 
 .app {

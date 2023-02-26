@@ -1,3 +1,13 @@
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container:hover {
+    cursor: pointer;
+}
+
 .carouselItem, .carouselItemImage {
     width: 100%;
     height: 100%;
@@ -18,4 +28,11 @@
 
 .carouselItemInfo > p {
     opacity: 1;
+}
+
+.movieInfoContainer {
+    width: 500px;
+    height: 200px;
+    background: red;
+    position: absolute;
 }

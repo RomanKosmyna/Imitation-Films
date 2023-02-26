@@ -3,7 +3,6 @@ export default function isDarkModeReducer(state = true, action) {
         case 'toggleDarkMode': {
             return !state;
         }
-
         default:
             return state;
     }

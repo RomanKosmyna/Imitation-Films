@@ -12,7 +12,7 @@
 }
 
 .titleContainer > h1 {
-    color: var(--white);
+    color: var(--header-navigation);
     font-size: 40px;
     margin: 0;
 }

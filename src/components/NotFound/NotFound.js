@@ -1,5 +1,6 @@
-import styles from './NotFound.module.css';
 import {NoSymbolIcon} from "@heroicons/react/24/solid";
+
+import styles from './NotFound.module.css';
 
 const NotFound = () => {
     return (

@@ -1,13 +1,19 @@
 import {PosterPreview} from "../../PosterPreview/PosterPreview";
+import {Link} from "react-router-dom";
+
+import {motion} from "framer-motion";
 
 import styles from './MovieListCard.module.css';
-import {Link} from "react-router-dom";
 
 const MovieListCard = ({movie}) => {
     const {id, title, poster_path} = movie;
 
     return (
-        <div className={styles.movieListCard}>
+        <motion.div className={styles.movieListCard}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    exit={{opacity: 0}}
+        >
             <div className={styles.movieListCardInner}>
                 <div className={styles.moviePoster}>
                     <PosterPreview poster={poster_path} alt={title}/>
@@ -16,7 +22,7 @@ const MovieListCard = ({movie}) => {
                     <Link to={`/movie/${id.toString()}`}>View Details</Link>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

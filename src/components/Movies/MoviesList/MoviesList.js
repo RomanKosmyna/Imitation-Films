@@ -1,12 +1,14 @@
-import {allMoviesActions} from "../../../redux/slices/allMoviesSlice/allMoviesSlice";
 import {MovieListCard} from "../MovieListCard/MovieListCard";
 import {useDispatch, useSelector} from "react-redux";
 import {useSearchParams} from "react-router-dom";
+import {allMoviesActions} from "../../../redux";
 import {useEffect} from "react";
 
-import styles from './MoviesList.module.css';
+import {motion} from "framer-motion";
 
 import {ArrowLeftIcon, ArrowRightIcon} from "@heroicons/react/24/solid";
+
+import styles from './MoviesList.module.css';
 
 const MoviesList = () => {
     const {allMovies, currentPage, totalPages} = useSelector(state => state.allMovies);
@@ -19,7 +21,11 @@ const MoviesList = () => {
     },[query]);
 
     return (
-        <div className={styles.moviesListContainer}>
+        <motion.div className={styles.moviesListContainer}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    exit={{opacity: 0}}
+        >
             <div className={styles.moviesList}>
                 {allMovies.length !== 0 && allMovies.map(movie => <MovieListCard key={movie.id} movie={movie}/>)}
             </div>
@@ -31,7 +37,7 @@ const MoviesList = () => {
                     <ArrowRightIcon/>
                 </button>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

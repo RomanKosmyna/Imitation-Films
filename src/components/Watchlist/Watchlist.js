@@ -3,8 +3,9 @@ import {StartRating} from "../StarsRating/StartRating";
 import {Link} from "react-router-dom";
 import {useState} from "react";
 
+import {motion} from "framer-motion";
+
 import styles from './Watchlist.module.css';
-import {Footer} from "../Footer/Footer";
 
 const Watchlist = () => {
     const [render, setRender] = useState(false);
@@ -22,7 +23,11 @@ const Watchlist = () => {
     }
 
     return (
-        <div className={styles.mainContainer}>
+        <motion.div className={styles.mainContainer}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    exit={{opacity: 0}}
+        >
             <div className={styles.container}>
                 {values.length !== 0 ? values.map(movie =>
                     <div className={styles.itemContainer} key={movie.id}>
@@ -42,7 +47,7 @@ const Watchlist = () => {
                 </div>
                 }
             </div>
-        </div>
+        </motion.div>
     );
 };
 

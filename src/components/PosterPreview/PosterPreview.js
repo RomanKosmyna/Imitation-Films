@@ -1,4 +1,4 @@
-import {imageBaseURL} from "../../configs/urls";
+import {imageBaseURL} from "../../configs";
 
 const PosterPreview = (props) => {
     return (

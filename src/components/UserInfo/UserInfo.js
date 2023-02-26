@@ -1,17 +1,20 @@
+import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
-import './ProfileMenu.css';
 import {useState} from "react";
+import user from '../../images/cruise.png';
+
 import {
     ArrowRightOnRectangleIcon, ChevronDownIcon,
     ChevronLeftIcon,
     CogIcon
 } from "@heroicons/react/24/solid";
-import {CSSTransition} from "react-transition-group";
-import user from '../../images/cruise.png';
 import {MoonIcon, SunIcon} from "@heroicons/react/24/outline";
-import {useDispatch, useSelector} from "react-redux";
 
-const ProfileMenu = () => {
+import {CSSTransition} from "react-transition-group";
+
+import './UserInfo.css';
+
+const UserInfo = () => {
     const [open, setOpen] = useState(false);
 
     const toggleOpen = () => {
@@ -107,4 +110,4 @@ function DropdownMenu() {
     );
 }
 
-export {ProfileMenu};
+export {UserInfo};

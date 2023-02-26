@@ -1,5 +1,6 @@
-import styles from './GenreBadge.module.css';
 import {Link} from "react-router-dom";
+
+import styles from './GenreBadge.module.css';
 
 const GenreBadge = ({genre}) => {
     const {id,name} = genre;

@@ -1,8 +1,9 @@
-import {Link, NavLink} from "react-router-dom";
-import styles from './Header.module.css';
-import logo from '../../../images/logo.png';
 import {SearchMovie} from "../SearchBar/SearchBar";
-import {ProfileMenu} from "../../ProfileMenu/ProfileMenu";
+import {UserInfo} from "../../UserInfo/UserInfo";
+import {Link, NavLink} from "react-router-dom";
+import logo from '../../../images/logo.png';
+
+import styles from './Header.module.css';
 
 const Header = () => {
 
@@ -20,11 +21,9 @@ const Header = () => {
                     Movies
                 </NavLink>
 
-
                 <NavLink to={'/genres'}>
                     Genres
                 </NavLink>
-
 
                 <NavLink to={'/watchlist'}>
                     Your Watchlist
@@ -35,7 +34,7 @@ const Header = () => {
                 <SearchMovie/>
 
                 <div className={styles.profileMenu}>
-                    <ProfileMenu/>
+                    <UserInfo/>
                 </div>
             </div>
         </div>

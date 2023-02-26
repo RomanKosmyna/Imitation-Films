@@ -11,9 +11,11 @@ import './PopularMoviesCarousel.css';
 
 import {useDispatch, useSelector} from "react-redux";
 import {popularMoviesActions} from "../../../redux";
+import {MovieInfoUnderCarousel} from "../MovieInfoUnderCarousel/MovieInfoUnderCarousel";
 
 const PopularMoviesCarousel = () => {
     const {popularMovies: {results}, loading} = useSelector(state => state.popularMovies)
+    const {movieInfo} = useSelector(state => state.clickedSlider);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -46,6 +48,9 @@ const PopularMoviesCarousel = () => {
                     </Swiper>
                 </>
             </div>
+            {movieInfo.length !== 0 && <div>
+                <MovieInfoUnderCarousel/>
+            </div>}
         </div>
     );
 };

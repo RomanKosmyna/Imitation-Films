@@ -1,6 +1,7 @@
-import axios from "axios";
-import {movieBaseURL} from "../configs/urls";
+import {movieBaseURL} from "../configs";
 import {apiToken} from "../configs";
+
+import axios from "axios";
 
 const apiService = axios.create({baseURL: movieBaseURL});
 

@@ -11,9 +11,9 @@ const Footer = () => {
                     © 2023 Roman Kosmyna. All Rights Reserved.
                 </div>
                 <div className={styles.bottom}>
-                    <p className={styles.terms}>Terms of Service</p>
-                    <p className={styles.about}>About Us</p>
-                    <p className={styles.contact}>Contact Us</p>
+                    <p>Terms of Service</p>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
                 </div>
             </div>
         </div>

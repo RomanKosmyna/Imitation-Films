@@ -52,10 +52,8 @@
 }
 
 .movieInfo > a:hover {
-    opacity: 1;
-    background: var(--bg);
-    color: crimson;
-    border: 5px solid var(--text-primary);
+    filter: brightness(110%);
+    background-color: var(--movie-card-color);
 }
 
 .moviePoster > img {
