@@ -37,7 +37,8 @@
 .overview {
     text-align: justify;
     width: auto;
-    padding: 8px;
+    padding: 10px;
+    font-size: var(--overview-text-size);
 }
 
 .overview {
@@ -81,7 +82,7 @@ h2 {
     padding: 5px;
     width: 100px;
     background: var(--header-navigation);
-    color: var(--website-name);
+    color: var(--text-primary);
     font-weight: 700;
 }
 
@@ -90,6 +91,6 @@ h2 {
     padding: 5px;
     width: 100px;
     background: var(--header-navigation);
-    color: var(--website-name);
+    color: var(--text-primary);
     font-weight: 700;
 }
