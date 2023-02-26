@@ -61,6 +61,7 @@ h2 {
 
 .nothingAdded {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

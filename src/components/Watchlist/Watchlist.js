@@ -44,6 +44,7 @@ const Watchlist = () => {
                         </div>
                     </div>): <div className={styles.nothingAdded}>
                     <h1>Nothing has been added to your Watchlist yet!</h1>
+                    <h2>You can add a movie by clicking a "Add to Watchlist" button on a movie page.</h2>
                 </div>
                 }
             </div>
