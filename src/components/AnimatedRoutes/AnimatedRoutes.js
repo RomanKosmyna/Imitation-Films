@@ -1,7 +1,7 @@
 import {MainLayout} from "../../layouts";
 import {Navigate, useLocation, useRoutes} from "react-router-dom";
 import {GenresPage, MoviePage, MoviesPage, NotFoundPage, WatchListPage} from "../../pages";
-import {Genre} from "../Genre/Genre";
+import {Genre} from "../GenresComponent/Genre/Genre";
 import {AnimatePresence} from "framer-motion";
 
 const AnimatedRoutes = () => {

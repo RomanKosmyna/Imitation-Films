@@ -1,6 +1,6 @@
-import {PopularMoviesCarousel} from "../MoviesCarousel/PopularMoviesCarousel/PopularMoviesCarousel";
+import {PopularMoviesCarousel} from "../../MoviesCarousel/PopularMoviesCarousel/PopularMoviesCarousel";
 import {useDispatch, useSelector} from "react-redux";
-import {genresActions} from "../../redux";
+import {genresActions} from "../../../redux";
 import {Link} from "react-router-dom";
 import {useEffect} from "react";
 

@@ -1,6 +1,6 @@
 import {PosterPreview} from "../../PosterPreview/PosterPreview";
 import {StartRating} from "../../StarsRating/StartRating";
-import {GenreBadge} from "../../GenreBadge/GenreBadge";
+import {GenreBadge} from "../../GenresComponent/GenreBadge/GenreBadge";
 import {Trailer} from "../../Trailer/Trailer";
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";

@@ -1,6 +1,6 @@
-import {MovieListCard} from "../Movies/MovieListCard/MovieListCard";
+import {MovieListCard} from "../../Movies/MovieListCard/MovieListCard";
 import {useParams, useSearchParams} from "react-router-dom";
-import {genresActions} from "../../redux";
+import {genresActions} from "../../../redux";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 
@@ -13,17 +13,13 @@ const Genre = () => {
     const {moviesByGenre, currentPage, totalPages} = useSelector(state => state.genres)
     const dispatch = useDispatch();
     const [query, setQuery] = useSearchParams({page: '1'});
-    console.log(moviesByGenre)
+
     useEffect(() => {
         dispatch(genresActions.getMoviesByGenre( {id, page: query.get('page')}))
     },[id, dispatch, query]);
 
     return (
         <div className={styles.mainContainer}>
-            <div className={styles.titleContainer}>
-                {/*<h1>{name} Movies</h1>*/}
-            </div>
-
             <div className={styles.movieContainer}>
                 {moviesByGenre && moviesByGenre.map(movie => <MovieListCard key={movie.id} movie={movie}/>)}
             </div>
