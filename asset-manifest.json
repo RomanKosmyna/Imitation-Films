@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/movies/static/css/main.3d716721.css",
-    "main.js": "/movies/static/js/main.f7126ca1.js",
-    "static/media/cardBackgroudImage.jpg": "/movies/static/media/cardBackgroudImage.c224bd7fefcb1f756063.jpg",
-    "static/media/cruise.png": "/movies/static/media/cruise.fe25b9515c4a3b202949.png",
-    "static/media/logo.png": "/movies/static/media/logo.b1468657440dccebdd4f.png",
-    "index.html": "/movies/index.html",
-    "main.3d716721.css.map": "/movies/static/css/main.3d716721.css.map",
-    "main.f7126ca1.js.map": "/movies/static/js/main.f7126ca1.js.map"
+    "main.css": "/movie/static/css/main.4ec42ee0.css",
+    "main.js": "/movie/static/js/main.6562aa47.js",
+    "static/media/cardBackgroudImage.jpg": "/movie/static/media/cardBackgroudImage.c224bd7fefcb1f756063.jpg",
+    "static/media/cruise.png": "/movie/static/media/cruise.fe25b9515c4a3b202949.png",
+    "static/media/logo.png": "/movie/static/media/logo.b1468657440dccebdd4f.png",
+    "index.html": "/movie/index.html",
+    "main.4ec42ee0.css.map": "/movie/static/css/main.4ec42ee0.css.map",
+    "main.6562aa47.js.map": "/movie/static/js/main.6562aa47.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d716721.css",
-    "static/js/main.f7126ca1.js"
+    "static/css/main.4ec42ee0.css",
+    "static/js/main.6562aa47.js"
   ]
 }
