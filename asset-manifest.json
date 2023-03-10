@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Imitation-Films/static/css/main.68a49480.css",
-    "main.js": "/Imitation-Films/static/js/main.36fb6e51.js",
-    "static/media/cardBackgroudImage.jpg": "/Imitation-Films/static/media/cardBackgroudImage.c224bd7fefcb1f756063.jpg",
-    "static/media/cruise.png": "/Imitation-Films/static/media/cruise.fe25b9515c4a3b202949.png",
-    "static/media/logo.png": "/Imitation-Films/static/media/logo.b1468657440dccebdd4f.png",
-    "index.html": "/Imitation-Films/index.html",
-    "main.68a49480.css.map": "/Imitation-Films/static/css/main.68a49480.css.map",
-    "main.36fb6e51.js.map": "/Imitation-Films/static/js/main.36fb6e51.js.map"
+    "main.css": "/movies/static/css/main.3d716721.css",
+    "main.js": "/movies/static/js/main.f7126ca1.js",
+    "static/media/cardBackgroudImage.jpg": "/movies/static/media/cardBackgroudImage.c224bd7fefcb1f756063.jpg",
+    "static/media/cruise.png": "/movies/static/media/cruise.fe25b9515c4a3b202949.png",
+    "static/media/logo.png": "/movies/static/media/logo.b1468657440dccebdd4f.png",
+    "index.html": "/movies/index.html",
+    "main.3d716721.css.map": "/movies/static/css/main.3d716721.css.map",
+    "main.f7126ca1.js.map": "/movies/static/js/main.f7126ca1.js.map"
   },
   "entrypoints": [
-    "static/css/main.68a49480.css",
-    "static/js/main.36fb6e51.js"
+    "static/css/main.3d716721.css",
+    "static/js/main.f7126ca1.js"
   ]
 }
