@@ -2,7 +2,7 @@
 
 ## [Check project](https://imitation-films.vercel.app/movie)
 
-**Technologies:**
+**Main Technologies:**
 <br />
 HTML5, CSS, JavaScript, Node.js, React, Redux, Redux Toolkit, Axios
 
