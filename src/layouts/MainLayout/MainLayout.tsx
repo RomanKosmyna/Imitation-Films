@@ -11,7 +11,7 @@ const MainLayout = () => {
             <Header/>
             <MobileNavigationWrapper/>
             <Outlet/>
-            <Footer/>
+            {/*<Footer/>*/}
         </div>
     );
 };

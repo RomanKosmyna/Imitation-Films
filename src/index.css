@@ -14,11 +14,6 @@ body {
   flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
-}
-
 :root {
   --w100: 100%;
   --h100: 100%;
@@ -39,31 +34,6 @@ code {
   --grey-color-2: #999;
   --orange-color: #f26419;
   --padding-gap-1: 1.5rem;
-
-
-
-  /*--background: #151616;*/
-  /*--header-background: #050401;*/
-  /*--header-navigation: crimson;*/
-  /*--header-border-bottom: 5px solid #FFFAFF;*/
-  /*--website-name: snow;*/
-  /*--nav-underline: snow;*/
-  /*--nav-hover: snow;*/
-  /*--profile-background: #151616;*/
-  /*--profile-border: 5px solid crimson;*/
-  /*--profile-menu-hover: #525357;*/
-  /*--movieInfo-text-color: snow;*/
-  /*--genreBar-navigation-text: snow;*/
-  /*--bg:  #242526;*/
-  /*--nav-size: 60px;*/
-  /*--border-radius: 8px;*/
-  /*--speed: 500ms;*/
-  /*--text-primary: #FFFFFF;*/
-  /*--footer-bottom-text: #FFFFFF;*/
-  /*--movie-card-color: #242526;*/
-  /*--overview-text-size: 20px;*/
-  /*--genre-badge-color: darkorange;*/
-  /*--genre-badge-background: #333333;*/
 }
 
 [data-theme='light'] {
@@ -71,44 +41,26 @@ code {
   --main-text-color: var(--black-text-color);
   --main-page-background: var(--white-page-background);
   --main-mobile-nav-wrapper-background: var(--mobile-navigation-wrapper-background-dark);
+}
 
 .no-overflow {
   overflow-y: hidden;
 }
 
-  /*--background: #FDF0D5;*/
-  /*--header-background: #3B429F;*/
-  /*--header-navigation: #EDAE49;*/
-  /*--header-border-bottom: 5px solid #AFB3F7;*/
-  /*--website-name: #1B98E0;*/
-  /*--nav-underline: darkorange;*/
-  /*--nav-hover: #280003;*/
-  /*--profile-background: white;*/
-  /*--profile-border: 5px solid crimson;*/
-  /*--profile-menu-hover: #AFB3F7;*/
-  /*--movieInfo-text-color: crimson;*/
-  /*--genreBar-navigation-text: #EDAE49;*/
-  /*--text-primary: #000;*/
-  /*--footer-bottom-text: #FFFFFF;*/
-  /*--movie-card-color: #242526;*/
-  /*--overview-text-size: 20px;*/
-  /*--genre-badge-color: red;*/
-  /*--genre-badge-background: #333333;*/
+#root {
+  width: 100%;
+  height: 100%;
 }
 
 .app {
+  width: 100%;
+  height: 100%;
   background-color: var(--main-background);
-  transition: all 350ms;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
-}
-
-html {
-  overflow: scroll;
-}
+/*html {*/
+/*  overflow: scroll;*/
+/*}*/
 
 ::-webkit-scrollbar {
   display: none;

@@ -1,10 +1,12 @@
 import {Watchlist} from "../../components/Watchlist";
 
+import styles from "../../styles/page.module.css";
+
 const WatchListPage = () => {
     return (
-        <div>
+        <main className={styles.page}>
             <Watchlist/>
-        </div>
+        </main>
     );
 };
 
