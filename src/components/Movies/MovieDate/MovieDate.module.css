@@ -1,0 +1,16 @@
+.publishDateContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif, serif;
+    font-size: 1rem;
+    margin-top: 0.6rem;
+}
+
+.publishText {
+    color: var(--orange-color);
+    font-weight: 700;
+}
+
+.publishDate {
+    color: var(--main-text-color);
+}

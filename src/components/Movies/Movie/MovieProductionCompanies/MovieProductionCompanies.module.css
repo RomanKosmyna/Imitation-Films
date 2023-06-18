@@ -1,0 +1,10 @@
+.companiesContainer {
+    width: var(--w100);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    margin-top: 1rem;
+    background-color: var(--white-page-background);
+}

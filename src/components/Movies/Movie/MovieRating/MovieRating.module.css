@@ -1,0 +1,15 @@
+.ratingContainer {
+    width: var(--w100);
+    margin-top: 1rem;
+}
+
+.ratingText {
+    color: var(--main-text-color);
+    font-weight: 700;
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+    color: var(--orange-color);
+}

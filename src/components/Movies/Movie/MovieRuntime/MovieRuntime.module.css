@@ -1,0 +1,13 @@
+.runtimeContainer {
+    width: var(--w100);
+    margin-top: 0.6rem;
+}
+
+.runtime {
+    color: var(--orange-color);
+    font-weight: 700;
+}
+
+.time {
+    color: var(--main-text-color);
+}

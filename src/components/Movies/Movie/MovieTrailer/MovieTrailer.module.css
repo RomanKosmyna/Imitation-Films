@@ -1,0 +1,5 @@
+.trailerContainer {
+    width: var(--w100);
+    height: 450px;
+    margin-top: 1rem;
+}

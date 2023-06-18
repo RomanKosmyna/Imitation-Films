@@ -1,0 +1,38 @@
+.addWatchlistContainer {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.addText {
+    color: var(--main-text-color);
+    font-size: 1.4rem;
+}
+
+.watchlistBtn {
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.bookmark {
+    width: var(--w100);
+    height: var(--h100);
+}
+
+.added {
+    width: var(--w100);
+    height: var(--h100);
+    background-color: var(--orange-color);
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: green;
+}
+
+.add {
+    background-color: red;
+}

@@ -1,0 +1,5 @@
+.layout {
+    width: var(--w100);
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,18 @@
+.viewDetailsContainer {
+    width: var(--w100);
+    height: 40px;
+    background-color: var(--main-background);
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.viewLink {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--main-text-color);
+    border: 1px solid var(--main-text-color);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+}

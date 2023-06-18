@@ -1,4 +1,4 @@
-import {PosterPreview} from "../../PosterPreview/PosterPreview";
+import {PosterPreview} from "../../Movies/PosterPreview/PosterPreview";
 import {StartRating} from "../../StarsRating/StartRating";
 import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";

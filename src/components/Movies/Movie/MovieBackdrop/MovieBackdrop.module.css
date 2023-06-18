@@ -1,0 +1,9 @@
+.backdropContainer {
+    width: var(--w100);
+    height: auto;
+    margin-top: 1rem;
+}
+
+.backdropContainer > img {
+    width: var(--w100);
+}

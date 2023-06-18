@@ -1,0 +1,22 @@
+.logoContainer {
+    width: 60px;
+    height: var(--h100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.logoWrapper {
+    width: var(--w100);
+    height: var(--h100);
+    display: flex;
+    align-items: center;
+}
+
+.logoWrapper > img {
+    width: 58px;
+    height: 65px;
+    object-fit: cover;
+}

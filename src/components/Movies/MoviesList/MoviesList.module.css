@@ -1,11 +1,6 @@
-.moviesListContainer {
-    width: 100%;
+.moviesContainer {
+    width: var(--w100);
     display: flex;
     flex-direction: column;
-}
-
-.moviesList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    row-gap: 1rem;
 }

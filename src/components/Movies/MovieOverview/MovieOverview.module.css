@@ -1,0 +1,11 @@
+.movieOverviewContainer {
+    width: var(--w100);
+    margin-top: 0.5rem;
+}
+
+.movieOverview {
+    color: var(--grey-color-2);
+    text-align: justify;
+    font-family: sans-serif, serif;
+    font-size: 1.2rem;
+}

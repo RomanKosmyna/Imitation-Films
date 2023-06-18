@@ -1,0 +1,6 @@
+.genreContainer {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.3rem;
+}

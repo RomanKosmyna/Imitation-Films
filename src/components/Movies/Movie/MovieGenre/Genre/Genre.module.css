@@ -1,0 +1,23 @@
+.tag {
+    color: var(--white-text-color);
+    padding: 0.3rem;
+    border-radius: 8px;
+    margin-right: 0.3rem;
+    font-weight: 700;
+}
+
+.purple {
+    background-color: #8c6bbf;
+}
+
+.green {
+    background-color: #0dbf8e;
+}
+
+.orange {
+    background-color: #a25e1c;
+}
+
+.blue {
+    background-color: #0087b5;
+}

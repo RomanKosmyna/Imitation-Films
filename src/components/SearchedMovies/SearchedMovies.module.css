@@ -1,0 +1,9 @@
+.searchedMoviesContainer {
+    width: var(--w100);
+    height: 300px;
+    background-color: var(--main-background);
+    border-radius: 8px;
+    border: 1px solid var(--grey-color-1);
+    transition: height 1s ease-in;
+    padding: var(--padding-gap-1);
+}

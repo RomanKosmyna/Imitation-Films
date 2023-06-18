@@ -1,0 +1,21 @@
+.voteContainer {
+    width: var(--w100);
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.voteIcon {
+    width: 20px;
+    height: 20px;
+    color: var(--main-text-color);
+}
+
+.voteText {
+    color: var(--main-text-color);
+    font-weight: 700;
+}
+
+.count {
+    color: var(--orange-color);
+}

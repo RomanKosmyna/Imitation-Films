@@ -1,0 +1,12 @@
+.posterContainer {
+    width: 100%;
+    height: auto;
+}
+
+.posterContainer > img {
+    max-width: 100%;
+    width: var(--w100);
+    height: var(--h100);
+    object-fit: cover;
+    border-radius: 5px;
+}

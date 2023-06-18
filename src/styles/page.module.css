@@ -1,0 +1,6 @@
+.page {
+    width: var(--w100);
+    padding: 0 var(--padding-gap-1) var(--padding-gap-1) var(--padding-gap-1);
+    background-color: var(--main-page-background);
+    padding-top: 64px;
+}

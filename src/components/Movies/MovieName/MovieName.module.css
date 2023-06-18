@@ -1,0 +1,11 @@
+.movieNameContainer {
+    width: var(--w100);
+}
+
+.movieNameHeading {
+    color: var(--main-text-color);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-family: sans-serif;
+    text-align: justify;
+    text-shadow: 2px 1px var(--orange-color);
+}

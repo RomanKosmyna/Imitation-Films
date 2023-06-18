@@ -1,0 +1,44 @@
+.toggleMobNavContainer {
+    width: 30px;
+    height: var(--h100);
+    display: flex;
+    align-items: center;
+}
+
+.toggleMenu {
+    width: var(--w100);
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.toggleMenu:before,
+.toggleMenu:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    left: 0;
+    background-color: var(--main-text-color);
+    transform-origin: center center;
+    border-radius: 8px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.toggleMenu:before {
+    top: 50%;
+}
+
+.toggleMenu.active:before {
+    transform: rotate(45deg);
+    top: calc(50% - 1.5px);
+}
+
+.toggleMenu.active:after {
+    transform: rotate(-45deg);
+    top: calc(50% - 1.5px);
+}

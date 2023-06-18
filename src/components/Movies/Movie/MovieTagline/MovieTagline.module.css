@@ -1,0 +1,10 @@
+.taglineContainer {
+    width: var(--w100);
+    margin-top: 1rem;
+}
+
+.tagline {
+    color: var(--main-text-color);
+    font-style: oblique;
+    font-size: 1.2rem;
+}

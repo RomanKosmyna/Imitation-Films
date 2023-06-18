@@ -1,82 +1,20 @@
-.Header {
-    width: 100%;
+.header {
+    width: var(--w100);
+    height: 64px;
+    background-color: var(--main-background);
+    color: var(--main-text-color);
+    box-shadow: inset 0 -1px var(--grey-color-1);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    border-bottom: var(--header-border-bottom);
-    box-sizing: border-box;
-    background-color: var(--header-background);
+    padding: 0 var(--padding-gap-1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
 }
 
-.logo {
-    width: 30%;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin-left: 2em;
-}
-
-.logoImg {
-    height: 80%;
-    border-radius: 50%;
-}
-
-.logo  h1 {
-    font-size: 40px;
-    font-weight: 900;
-    margin: 0;
-    padding-left: .5em;
-}
-
-.logo a {
-    text-decoration: none;
-    color: var(--website-name);
-}
-
-.navigate {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.navigate > a {
-    text-decoration: none;
-    margin: 0 .8em;
-    color: var(--header-navigation);
-    font-size: 24px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-}
-
-.navigate > a[class='active'] {
-    text-decoration: underline 5px var(--nav-underline);
-    text-underline-offset: 22px;
-}
-
-.navigate > a:hover {
-    color: var(--nav-hover);
-}
-
-.searchbarSettings {
-    width: 26%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 2em;
-}
-
-.user {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 2em;
-}
-
-.profileMenu {
-    display: flex;
-    align-items: center;
+.backdropFilter {
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }

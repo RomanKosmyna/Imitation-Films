@@ -1,0 +1,16 @@
+.imageContainer {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.imageContainer > img {
+    max-width: var(--w100);
+    width: var(--w100);
+    height: auto;
+    object-fit: contain;
+    object-position: center top;
+    border-radius: 0.7rem;
+}

@@ -1,7 +1,7 @@
 import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 import {useState} from "react";
-import user from '../../images/cruise.png';
+import user from '../../images/obi.png';
 
 import {
     ArrowRightOnRectangleIcon, ChevronDownIcon,
