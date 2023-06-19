@@ -21,6 +21,10 @@ interface IProps {
 }
 
 const Movie: FC<IProps> = ({movie}) => {
+    if (!movie) {
+        return null;
+    }
+
     const {
         title,
         backdrop_path,

@@ -1,4 +1,5 @@
 export interface IMovie {
+    title: string;
     backdrop_path: string;
     homepage: string;
     adult: boolean;
@@ -20,7 +21,6 @@ export interface IMovie {
     spoken_languages: object;
     status: string;
     tagline: string;
-    title: string;
     video: boolean;
     videos: object;
     vote_average: number;
