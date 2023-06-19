@@ -15,13 +15,12 @@ interface IData {
 }
 
 const MovieListCard = ({data}: IData) => {
-    const {id, title, overview, release_date, poster_path} = data;
+    const {id, title, release_date, poster_path} = data;
     return (
         <div className={styles.movieCardContainer}>
             <PosterPreview poster={poster_path} alt={title}/>
             <MovieName title={title}/>
             <MovieDate date={release_date}/>
-            {/*<MovieOverview overview={overview}/>*/}
             <MovieViewDetails id={id}/>
         </div>
     );

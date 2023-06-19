@@ -4,12 +4,6 @@ import {PosterPreview} from "../../Movies/PosterPreview";
 
 import styles from "./MovieWatchlistItem.module.css";
 
-// interface IData {
-//     id: number;
-//     title: string;
-//     poster_path: string;
-// }
-
 const MovieWatchlistItem = ({data, onRemove}) => {
     const {id, title, poster_path} = data;
 
