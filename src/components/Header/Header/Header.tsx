@@ -1,3 +1,4 @@
+import React from 'react';
 import Navigation from "../../Navigation/Navigation/Navigation";
 import {useScrollTracker} from "../../../hooks";
 import Logo from "../../Logo/Logo";
