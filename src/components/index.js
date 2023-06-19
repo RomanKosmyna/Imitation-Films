@@ -1,7 +1,3 @@
-export * from './ButtonScrollToTop/ButtonScrollToTop';
-export * from './GenresComponent/Genre/Genre';
-export * from './GenresComponent/GenreBadge/GenreBadge';
-export * from './GenresComponent/Genres/Genres';
 export * from './Movies/Movie/Movie';
 export * from './Movies/MovieListCard/MovieListCard';
 export * from './NotFound/NotFound';
