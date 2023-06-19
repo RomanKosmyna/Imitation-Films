@@ -9,7 +9,7 @@ interface IProps {
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const MovieRating: FC<IProps> = (rating) => {
-    console.log(rating)
+
     return (
         <div className={styles.ratingContainer}>
             <p className={styles.ratingText}>IMDb Rating:</p>

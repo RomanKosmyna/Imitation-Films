@@ -4,7 +4,7 @@ import Genre from "./Genre/Genre";
 import styles from "./MovieGenre.module.css";
 
 interface IGenres {
-    genres: object;
+    genres: {id: number; name: string}[];
 }
 
 const MovieGenre: FC<IGenres> = ({genres}) => {
