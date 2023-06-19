@@ -1,0 +1,23 @@
+.watchlistItemContainer {
+    width: var(--w100);
+    background-color: var(--main-background);
+    border-radius: 8px;
+    border: 1px solid var(--grey-color-1);
+    padding: var(--padding-gap-1);
+}
+
+.itemHeading {
+    color: var(--main-text-color);
+}
+
+.itemOverview {
+    color: var(--grey-color-2);
+    text-align: justify;
+    font-family: sans-serif, serif;
+    font-size: 1.1rem;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+}

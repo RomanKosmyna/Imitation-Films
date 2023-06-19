@@ -1,5 +1,5 @@
 import {createAsyncThunk, createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {searchService} from "../../services/searchService";
+import {searchService} from "../../services";
 
 interface IState {
     searchedMovie: object[],

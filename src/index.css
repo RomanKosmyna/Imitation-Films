@@ -34,6 +34,7 @@ body {
   --grey-color-2: #999;
   --orange-color: #f26419;
   --padding-gap-1: 1.5rem;
+  --padding-gap-2: 0.7rem;
 }
 
 [data-theme='light'] {
@@ -58,13 +59,13 @@ body {
   background-color: var(--main-background);
 }
 
-/*html {*/
-/*  overflow: scroll;*/
-/*}*/
-
-::-webkit-scrollbar {
-  display: none;
+html {
+  overflow: scroll;
 }
+
+/*::-webkit-scrollbar {*/
+/*  display: none;*/
+/*}*/
 
 ul {
   list-style: none;

@@ -1,7 +1,8 @@
+import SearchedMoviesItem from "./SearchedMoviesItem/SearchedMoviesItem";
 import {useAppSelector} from "../../hooks";
+import {useEffect, useState} from "react";
 
 import styles from "./SearchedMovies.module.css";
-import {useEffect, useState} from "react";
 
 const SearchedMovies = () => {
     const [movies, setMovies] = useState([]);
@@ -9,15 +10,15 @@ const SearchedMovies = () => {
 
     useEffect(() => {
         setMovies(searchedMovie);
-    },[searchedMovie])
+    },[searchedMovie]);
 
     return (
         <>
             {movies.length !== 0 &&
                 <div className={styles.searchedMoviesContainer}>
-                    {movies?.map(movie => <div>
-                        {movie.title}
-                    </div>)}
+                    {movies?.map(movie => (
+                        <SearchedMoviesItem key={movie.id} {...movie}/>
+                    ))}
                 </div>
             }
         </>

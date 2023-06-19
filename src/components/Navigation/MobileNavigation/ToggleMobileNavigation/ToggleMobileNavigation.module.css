@@ -32,13 +32,3 @@
 .toggleMenu:before {
     top: 50%;
 }
-
-.toggleMenu.active:before {
-    transform: rotate(45deg);
-    top: calc(50% - 1.5px);
-}
-
-.toggleMenu.active:after {
-    transform: rotate(-45deg);
-    top: calc(50% - 1.5px);
-}

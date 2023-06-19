@@ -1,4 +1,4 @@
-import {MainLayout} from "../../layouts";
+import {MainLayout} from "../../layouts/MainLayout";
 import {Navigate, useLocation, useRoutes} from "react-router-dom";
 import {GenresPage, MoviePage, MoviesPage, NotFoundPage} from "../../pages";
 import {Genre} from "../GenresComponent/Genre/Genre";

@@ -40,7 +40,7 @@ const MobileNavigation = () => {
                     </li>
                     <li className={styles.listItem}>
                         <NavLink to={'/watchlist'}>
-                            Your Watchlist
+                            Watchlist
                         </NavLink>
                     </li>
                     <li className={styles.listItem}>

@@ -1,0 +1,38 @@
+.searchedMovieContainer {
+    width: var(--w100);
+    background-color: var(--main-page-background);
+    display: flex;
+    align-items: stretch;
+    padding: 0.1rem;
+    color: var(--main-text-color);font-weight: 700;
+    text-decoration: none;
+}
+
+.searchedMovieContainer::before {
+    padding: 0 0;
+}
+
+.searchedMovieImageContainer {
+    width: 40px;
+    height: var(--h100);
+}
+
+.searchedMovieImageContainer > img {
+    width: var(--w100);
+    height: var(--h100);
+    object-fit: cover;
+}
+
+.noPoster {
+    width: 40px;
+    height: var(--h100);
+}
+
+.searchedMovieTitle {
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex-grow: 1;
+    padding-left: 0.5rem;
+}

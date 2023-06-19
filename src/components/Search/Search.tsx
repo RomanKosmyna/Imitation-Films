@@ -1,12 +1,11 @@
 import {searchActions} from "../../redux/slices/search.slice";
-import {useAppDispatch, useAppSelector} from "../../hooks";
+import {useAppDispatch} from "../../hooks";
 import {useRef} from "react";
 
 import styles from "./Search.module.css";
 
 const Search = () => {
     const dispatch = useAppDispatch();
-    const {searchedMovie} = useAppSelector(state => state.searchReducer);
     const inputRef = useRef<HTMLInputElement>();
 
     const getInputValue = () => {
@@ -15,8 +14,9 @@ const Search = () => {
         if (value?.length !== 0) {
             setTimeout(async () => {
                 await dispatch(searchActions.searchMovie({movie: value}));
-                console.log(searchedMovie)
-            }, 1000)
+            }, 1000);
+        } else {
+            dispatch(searchActions.searchMovie([]));
         }
     };
 
@@ -38,6 +38,7 @@ const Search = () => {
                     ref={inputRef}
                     onChange={getInputValue}
                 />
+                <div className={styles.clearInput}></div>
             </div>
         </div>
     );

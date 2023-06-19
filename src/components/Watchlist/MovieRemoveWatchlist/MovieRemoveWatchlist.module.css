@@ -1,0 +1,10 @@
+.removeBtn {
+    background-color: red;
+    color: var(--white-text-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: 1px solid red;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+}

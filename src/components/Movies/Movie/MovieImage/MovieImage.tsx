@@ -1,5 +1,5 @@
 import {FC} from "react";
-import MovieAddWatchlist from "../../MovieAddWatchlist/MovieAddWatchlist";
+import MovieAddWatchlist from "../../../Watchlist/MovieAddWatchlist/MovieAddWatchlist";
 import {imageBaseURL} from "../../../../configs";
 
 import styles from "./MovieImage.module.css";

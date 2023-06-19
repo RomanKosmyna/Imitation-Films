@@ -1,5 +1,5 @@
 import {useAppSelector} from "./hooks";
-import {Routes} from "./components";
+import {Routes} from "./components/Routes";
 
 function App() {
     const theme = useAppSelector(state => state.themeReducer);

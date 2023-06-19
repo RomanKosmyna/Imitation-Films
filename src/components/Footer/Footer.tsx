@@ -1,4 +1,5 @@
 import styles from './Footer.module.css';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -10,9 +11,12 @@ const Footer = () => {
                 © 2023 Roman Kosmyna. All Rights Reserved.
             </div>
             <div className={styles.bottom}>
-                <p>Terms of Service</p>
-                <p>About Us</p>
-                <p>Contact Us</p>
+                <Link to={"/"}>Movies</Link>
+                <Link to={"/genres"}>Genres</Link>
+                <Link to={"/watchlist"}>Watchlist</Link>
+                {/*<p>Terms of Service</p>*/}
+                {/*<p>About Us</p>*/}
+                {/*<p>Contact Us</p>*/}
             </div>
         </div>
     );

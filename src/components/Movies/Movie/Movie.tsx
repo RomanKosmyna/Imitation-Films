@@ -14,7 +14,7 @@ import MovieGenre from "./MovieGenre/MovieGenre";
 import MovieProductionCompanies from "./MovieProductionCompanies/MovieProductionCompanies";
 
 import styles from "./Movie.module.css";
-import MovieAddWatchlist from "../MovieAddWatchlist/MovieAddWatchlist";
+import MovieAddWatchlist from "../../Watchlist/MovieAddWatchlist/MovieAddWatchlist";
 
 interface IProps {
     movie: IMovie | null;
@@ -40,7 +40,7 @@ const Movie: FC<IProps> = ({movie}) => {
     return (
         <div className={styles.movieContainer}>
             <div className={styles.topContainer}>
-                <MovieImage poster_path={poster_path} title={title}/>
+                {poster_path !== null && <MovieImage poster_path={poster_path} title={title}/>}
                 <div className={styles.dataContainer}>
                     <MovieName title={title}/>
                     <MovieRuntime runtime={runtime}/>

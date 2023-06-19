@@ -13,7 +13,7 @@
 }
 
 input {
-    width: 90%;
+    width: 80%;
     height: 40px;
     padding-left: 0.5rem;
     padding-right: 1rem;
@@ -21,12 +21,14 @@ input {
     border-top: 1px solid var(--grey-color-1);
     border-bottom: 1px solid var(--grey-color-1);
     border-left: none;
-    border-right: 1px solid var(--grey-color-1);
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-right: none;
     color: var(--main-text-color);
     font-size: 1.2rem;
     outline: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
 }
 
 .inputIconContainer {
@@ -49,3 +51,24 @@ input {
     width: 20px;
     height: 20px;
 }
+
+.clearInput {
+    width: 10%;
+    background-color: var(--main-background);
+    border-right: 1px solid var(--grey-color-1);
+    border-top-right-radius: 8px;
+    border-left: none;
+    border-bottom-right-radius: 8px;
+    border-top: 1px solid var(--grey-color-1);
+    border-bottom: 1px solid var(--grey-color-1);
+}
+
+/*.toggleMenu.active:before {*/
+/*    transform: rotate(45deg);*/
+/*    top: calc(50% - 1.5px);*/
+/*}*/
+
+/*.toggleMenu.active:after {*/
+/*    transform: rotate(-45deg);*/
+/*    top: calc(50% - 1.5px);*/
+/*}*/

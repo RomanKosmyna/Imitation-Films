@@ -11,9 +11,13 @@ interface IProps {
 const MovieBackdrop: FC<IProps> = ({backdrop, title}) => {
 
     return (
-        <div className={styles.backdropContainer}>
-            <img src={imageBaseURL + backdrop} alt={title}/>
-        </div>
+        <>
+            {backdrop !== null && (
+                <div className={styles.backdropContainer}>
+                    <img src={imageBaseURL + backdrop} alt={title}/>
+                </div>
+            )}
+        </>
     );
 };
 
