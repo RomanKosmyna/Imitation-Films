@@ -1,7 +1,7 @@
 import {FC} from "react";
+import {imageBaseURL} from "../../../../configs";
 
 import styles from "./MovieBackdrop.module.css";
-import {imageBaseURL} from "../../../../configs";
 
 interface IProps {
     backdrop: string;
