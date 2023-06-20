@@ -1,0 +1,26 @@
+.movieItemContainer {
+    width: 45%;
+    height: auto;
+    background-color: var(--main-background);
+    display: flex;
+    flex-direction: column;
+}
+
+.imageContainer {
+    width: var(--w100);
+}
+
+.imageContainer > img {
+    width: var(--w100);
+    height: auto;
+}
+
+.titleContainer {
+    width: var(--w100);
+    padding: 0.3rem 0.3rem 1rem 0.3rem;
+}
+
+.title {
+    color: var(--main-text-color);
+    font-size: 1rem;
+}

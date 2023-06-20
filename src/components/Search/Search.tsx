@@ -1,23 +1,32 @@
 import {searchActions} from "../../redux/slices/search.slice";
 import {useAppDispatch} from "../../hooks";
-import {useRef} from "react";
+import {useRef, useState} from "react";
 
 import styles from "./Search.module.css";
 
 const Search = () => {
     const dispatch = useAppDispatch();
     const inputRef = useRef<HTMLInputElement>();
+    const [value, setValue] = useState<string>("");
 
     const getInputValue = () => {
-        const value = inputRef.current?.value;
-
-        if (value?.length !== 0) {
+        const inputValue = inputRef.current?.value || "";
+        setValue(inputValue);
+        if (inputValue !== "") {
             setTimeout(async () => {
-                await dispatch(searchActions.searchMovie({movie: value}));
+                await dispatch(searchActions.searchMovie({movie: inputValue}));
             }, 1000);
         } else {
             dispatch(searchActions.searchMovie([]));
         }
+    };
+
+    const clearInput = () => {
+        if (inputRef.current) {
+            inputRef.current.value = "";
+        }
+        dispatch(searchActions.searchMovie([]));
+        setValue("");
     };
 
     return (
@@ -38,7 +47,17 @@ const Search = () => {
                     ref={inputRef}
                     onChange={getInputValue}
                 />
-                <div className={styles.clearInput}></div>
+                <div className={styles.clearInput} onClick={clearInput}>
+                    {value !== "" && (
+                        <>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                                 stroke="currentColor" className={`w-6 h-6 ${styles.clearIcon}`}>
+                                <path strokeLinecap="round" strokeLinejoin="round"
+                                      d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </>
+                    )}
+                </div>
             </div>
         </div>
     );

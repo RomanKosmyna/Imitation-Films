@@ -8,7 +8,7 @@ interface IProps {
 
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const MovieRating: FC<IProps> = (rating) => {
+const MovieRating: FC<IProps> = ({rating}) => {
 
     return (
         <div className={styles.ratingContainer}>

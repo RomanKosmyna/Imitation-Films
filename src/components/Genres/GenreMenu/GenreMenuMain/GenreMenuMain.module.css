@@ -1,0 +1,9 @@
+.genreMain {
+    width: var(--w100);
+    height: calc(100% - 64px);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 3rem;
+}

@@ -7,7 +7,7 @@ interface IGenres {
 }
 
 const MovieGenre = ({genres}: IGenres) => {
-    console.log(genres)
+
     return (
         <>
             {genres &&

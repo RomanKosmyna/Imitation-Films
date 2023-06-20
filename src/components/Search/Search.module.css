@@ -13,7 +13,7 @@
 }
 
 input {
-    width: 80%;
+    width: 75%;
     height: 40px;
     padding-left: 0.5rem;
     padding-right: 1rem;
@@ -53,7 +53,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .clearInput {
-    width: 10%;
+    width: 15%;
     background-color: var(--main-background);
     border-right: 1px solid var(--grey-color-1);
     border-top-right-radius: 8px;
@@ -61,14 +61,13 @@ input[type="search"]::-webkit-search-cancel-button {
     border-bottom-right-radius: 8px;
     border-top: 1px solid var(--grey-color-1);
     border-bottom: 1px solid var(--grey-color-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/*.toggleMenu.active:before {*/
-/*    transform: rotate(45deg);*/
-/*    top: calc(50% - 1.5px);*/
-/*}*/
-
-/*.toggleMenu.active:after {*/
-/*    transform: rotate(-45deg);*/
-/*    top: calc(50% - 1.5px);*/
-/*}*/
+.clearIcon {
+    color: var(--grey-color-2);
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,32 @@
+.genreHeader {
+    width: var(--w100);
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--main-background);
+    border-bottom: 1px solid var(--grey-color-1);
+    box-sizing: border-box;
+}
+
+.genreHeader > h4 {
+    color: var(--main-text-color);
+    font-size: 1.6rem;
+}
+
+.closeBtn {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+}
+
+.closeIcon {
+    color: var(--main-text-color);
+    font-size: 1.6rem;
+}

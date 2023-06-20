@@ -1,0 +1,13 @@
+.filterContainer {
+    width: 80%;
+}
+
+.filterBtn {
+    width: var(--w100);
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--orange-color);
+    color: var(--main-text-color);
+    font-size: 1.5rem;
+}

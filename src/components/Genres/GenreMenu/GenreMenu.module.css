@@ -1,0 +1,10 @@
+.GenreMenuContainer {
+    width: var(--w100);
+    height: var(--h100);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6000;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+}

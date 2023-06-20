@@ -44,9 +44,9 @@ body {
   --main-mobile-nav-wrapper-background: var(--mobile-navigation-wrapper-background-dark);
 }
 
-.no-overflow {
-  overflow-y: hidden;
-}
+/*.no-overflow {*/
+/*  overflow-y: hidden;*/
+/*}*/
 
 #root {
   width: 100%;
