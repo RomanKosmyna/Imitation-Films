@@ -1,4 +1,3 @@
-import {FC} from 'react';
 import Genre from "./Genre/Genre";
 
 import styles from "./MovieGenre.module.css";
@@ -7,8 +6,8 @@ interface IGenres {
     genres: {id: number; name: string}[];
 }
 
-const MovieGenre: FC<IGenres> = ({genres}) => {
-
+const MovieGenre = ({genres}: IGenres) => {
+    console.log(genres)
     return (
         <>
             {genres &&
