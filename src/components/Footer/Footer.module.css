@@ -1,6 +1,5 @@
 .footerContainer {
     width: var(--w100);
-    /*height: 7rem;*/
     font-family: sans-serif, serif;
     display: flex;
     flex-direction: column;

@@ -12,9 +12,9 @@ import MovieTrailer from "./MovieTrailer/MovieTrailer";
 import MovieVote from "./MovieVote/MovieVote";
 import MovieGenre from "./MovieGenre/MovieGenre";
 import MovieProductionCompanies from "./MovieProductionCompanies/MovieProductionCompanies";
+import MovieAddWatchlist from "../../Watchlist/MovieAddWatchlist/MovieAddWatchlist";
 
 import styles from "./Movie.module.css";
-import MovieAddWatchlist from "../../Watchlist/MovieAddWatchlist/MovieAddWatchlist";
 
 interface IProps {
     movie: IMovie | null;

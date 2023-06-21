@@ -21,8 +21,8 @@ const getMovies = createAsyncThunk(
     'moviesSlice/getAllMovies',
     async ({page}, {rejectWithValue}) => {
         try {
-            const {data} = await movieService.getMovies(page)
-            return data
+            const {data} = await movieService.getMovies(page);
+            return data;
         } catch (e) {
             return rejectWithValue(e.response.data)
         }
@@ -37,8 +37,8 @@ const moviesSlice = createSlice<IState, {}>({
         .addCase(getMovies.fulfilled, (state, action) => {
             const {page, results, total_pages} = action.payload;
             state.currentPage = page;
-            state.totalPages = total_pages;
             state.allMovies = results;
+            state.totalPages = total_pages;
             state.loading = false;
         })
         .addCase(getMovies.pending, (state) => {

@@ -29,7 +29,7 @@ const MovieDate: FC<IProps> = ({date}) => {
 
     const getDate = (month) => {
         const getMonth = () => {
-            if (month.startsWith("0")) {
+            if (month !== undefined && month.startsWith("0")) {
                 const sliceMonth = month.slice(1);
                 const monthObject = months.find((ele, index) => index === sliceMonth - 1);
                 const monthValue = Object.values(monthObject);
@@ -44,12 +44,12 @@ const MovieDate: FC<IProps> = ({date}) => {
         return `${getMonth()} ${day}, ${year}`;
     }
 
-    const releaseDae = getDate(month);
+    const releaseDate = getDate(month);
 
     return (
         <div className={styles.publishDateContainer}>
             <p className={styles.publishText}>Release Date:</p>
-            <span className={styles.publishDate}>{releaseDae}</span>
+            <span className={styles.publishDate}>{releaseDate}</span>
         </div>
     );
 };

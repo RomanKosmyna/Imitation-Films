@@ -1,3 +1,4 @@
+import MoviePagination from "../MoviePagination/MoviePagination";
 import {useAppDispatch, useAppSelector} from "../../../hooks";
 import {useSearchParams} from "react-router-dom";
 import {MovieListCard} from "../MovieListCard";
@@ -18,6 +19,7 @@ const MoviesList = () => {
     return (
         <div className={styles.moviesContainer}>
             {allMovies?.map((movie) => <MovieListCard key={movie.id} data={movie}/>)}
+            <MoviePagination/>
         </div>
     );
 }
