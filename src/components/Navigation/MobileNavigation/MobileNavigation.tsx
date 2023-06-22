@@ -51,8 +51,8 @@ const MobileNavigation = () => {
                     </li>
                 </ul>
             </nav>
-            <div className={styles.closeContainer}>
-                <button className={styles.closeBtn} onClick={toggle}></button>
+            <div className={styles.closeContainer} onClick={toggle}>
+                <button className={styles.closeBtn}></button>
             </div>
         </div>
     );

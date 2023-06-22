@@ -18,3 +18,10 @@
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
 }
+
+@media (min-width: 1200px) {
+    .header {
+        width: 80%;
+        left: auto;
+    }
+}

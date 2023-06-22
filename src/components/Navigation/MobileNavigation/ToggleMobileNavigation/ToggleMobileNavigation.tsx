@@ -14,9 +14,8 @@ const ToggleMobileNavigation = () => {
     return (
         <>
             {!toggleMobNavigation &&
-                <div className={styles.toggleMobNavContainer}>
-                    <span className={`${styles.toggleMenu} ${toggleMobNavigation ? styles.active : ""}`}
-                          onClick={toggle}></span>
+                <div className={styles.toggleMobNavContainer} onClick={toggle}>
+                    <span className={styles.toggleMenu}></span>
                 </div>
             }
         </>

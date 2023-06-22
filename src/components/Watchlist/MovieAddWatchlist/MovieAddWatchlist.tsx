@@ -1,5 +1,5 @@
 import {IMovie} from "../../../interfaces";
-import {FC, useEffect, useRef, useState} from "react";
+import {FC, useEffect, useState} from "react";
 
 import styles from "./MovieAddWatchlist.module.css";
 

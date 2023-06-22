@@ -19,9 +19,11 @@ const MovieListCard = ({data}: IData) => {
     return (
         <div className={styles.movieCardContainer}>
             <PosterPreview poster={poster_path} alt={title}/>
-            <MovieName title={title}/>
-            <MovieDate date={release_date}/>
-            <MovieViewDetails id={id}/>
+            <div className={styles.detailsContainer}>
+                <MovieName title={title}/>
+                <MovieDate date={release_date}/>
+                <MovieViewDetails id={id}/>
+            </div>
         </div>
     );
 };

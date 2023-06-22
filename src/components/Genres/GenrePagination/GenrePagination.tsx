@@ -1,25 +1,25 @@
 import {useSearchParams} from "react-router-dom";
 
-import styles from "./MoviePagination.module.css";
+import styles from "./GenrePagination.module.css";
 
-const MoviePagination = () => {
-    const [query, setQuery] = useSearchParams({page: '1'});
-    const page = query.get("page");
+const GenrePagination = () => {
+    const [genreQuery, setGenreQuery] = useSearchParams({page: '1'});
+    const page = genreQuery.get("page");
 
     const previousPage = () => {
-        const currentPage = query.get("page");
+        const currentPage = genreQuery.get("page");
         if (currentPage > 1) {
             const prevPage = parseInt(currentPage) - 1;
-            query.set("page", prevPage.toString());
-            setQuery(query);
+            genreQuery.set("page", prevPage.toString());
+            setGenreQuery(genreQuery);
         }
     };
 
     const nextPage = () => {
-      const currentPage = query.get("page");
+      const currentPage = genreQuery.get("page");
       const nextPage = parseInt(currentPage) + 1;
-      query.set("page", nextPage.toString());
-      setQuery(query);
+        genreQuery.set("page", nextPage.toString());
+        setGenreQuery(genreQuery);
     };
 
     return (
@@ -31,4 +31,4 @@ const MoviePagination = () => {
     );
 };
 
-export default MoviePagination;
+export default GenrePagination;

@@ -22,7 +22,7 @@
 }
 
 .bottom {
-    width: var(--w100);
+    width: 60%;
     color: var(--grey-color-2);
     display: flex;
     justify-content: space-between;
@@ -34,4 +34,15 @@
     text-decoration: none;
     font-weight: 700;
     font-size: 1rem;
+    transition: color 0.2s ease-in;
+}
+
+.bottom > a:hover {
+    color: var(--orange-color);
+}
+
+@media (min-width: 680px)  {
+    .bottom {
+        justify-content: space-evenly;
+    }
 }

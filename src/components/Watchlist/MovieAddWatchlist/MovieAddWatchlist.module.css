@@ -2,6 +2,7 @@
     width: 10%;
     display: flex;
     align-items: center;
+    border-radius: 5px;
 }
 
 .addText {
@@ -12,9 +13,10 @@
 .watchlistBtn {
     height: 35px;
     border: none;
-    border-radius: 5px;
+    border-radius: inherit;
     display: flex;
     align-items: center;
+    box-shadow: 0 0 10px var(--main-text-color);
 }
 
 .bookmark {
@@ -27,10 +29,6 @@
     height: var(--h100);
     background-color: var(--orange-color);
     border-radius: 5px;
-}
-
-.btn {
-    background-color: green;
 }
 
 .add {

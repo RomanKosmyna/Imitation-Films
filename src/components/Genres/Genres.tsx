@@ -7,21 +7,22 @@ import styles from "./Genres.module.css";
 import FilterByGenre from "./FilterByGenre/FilterByGenre";
 import MoviesByGenre from "./MoviesByGenre/MoviesByGenre";
 import GenreMenu from "./GenreMenu/GenreMenu";
+import GenrePagination from "./GenrePagination/GenrePagination";
 
 const Genres = () => {
     const dispatch = useAppDispatch();
     const [movies, setMovies] = useState([]);
     const [chosenGenre, setChosenGenre] = useState("");
-    const [query] = useSearchParams({page: '1'});
+    const [genreQuery] = useSearchParams({page: '1'});
     const {moviesByGenre} = useAppSelector(state => state.genresReducer);
-
     useEffect(() => {
+        console.log(moviesByGenre)
         if (moviesByGenre.length !== 0) {
             setMovies(moviesByGenre);
         } else {
-            movieService.getMovies(query.get("page")).then(({data}) => setMovies(data.results));
+            movieService.getMovies(genreQuery.get("page")).then(({data}) => setMovies(data.results));
         }
-    }, [moviesByGenre, query, dispatch])
+    }, [moviesByGenre, genreQuery, dispatch])
 
     return (
         <div className={styles.genresContainer}>
@@ -32,6 +33,7 @@ const Genres = () => {
             </h2>
             <MoviesByGenre movies={movies}/>
             <GenreMenu activeGenre={chosenGenre} setter={setChosenGenre}/>
+            {/*<GenrePagination/>*/}
         </div>
     );
 };

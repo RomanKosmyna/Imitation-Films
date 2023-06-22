@@ -8,13 +8,18 @@
     color: var(--white-text-color);
     font-size: 1.2rem;
     background-color: transparent;
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+}
+
+.chooseBtn:hover {
+    color: var(--orange-color);
 }
 
 .activeIcon {
     position: absolute;
     left: -35px;
     top: -3px;
-    /*transform: translate(-50%, -50%);*/
 }
 
 .icon {

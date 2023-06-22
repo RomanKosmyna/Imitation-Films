@@ -7,6 +7,7 @@
 
 .desNavList {
     display: flex;
+    align-items: center;
 }
 
 .listItem {

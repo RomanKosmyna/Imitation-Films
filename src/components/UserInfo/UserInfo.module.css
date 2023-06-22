@@ -1,0 +1,68 @@
+.userInfoWrapper {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+.userContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.userContainer > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.userDetailsModule {
+    position: absolute;
+    top: 64px;
+    right: 5px;
+    width: 200px;
+    min-height: 100px;
+    background-color: var(--main-background);
+    border: 1px solid var(--grey-color-1);
+    border-radius: 8px;
+    z-index: 5000;
+}
+
+.mobNavList {
+    display: flex;
+    flex-direction: column;
+    color: var(--main-text-color);
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.listItem {
+    height: 50px;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid var(--grey-color-1);
+    user-select: none;
+}
+
+.username {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.closeBtn {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.closeIcon {
+    color: var(--main-text-color);
+    font-size: 1.6rem;
+}

@@ -1,12 +1,33 @@
 .posterContainer {
-    width: 100%;
+    max-width: var(--w100);
     height: auto;
 }
 
 .posterContainer > img {
     max-width: 100%;
-    width: var(--w100);
-    height: var(--h100);
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     border-radius: 5px;
+}
+
+@media (min-width: 680px) {
+    .posterContainer {
+        width: 140px;
+        height: var(--h100);
+    }
+
+    .posterContainer > img {
+        object-fit: contain;
+    }
+}
+
+@media (min-width: 915px) {
+    .posterContainer {
+        width: 120px;
+        height: var(--h100);
+    }
+
+    .posterContainer > img {
+        object-fit: contain;
+    }
 }

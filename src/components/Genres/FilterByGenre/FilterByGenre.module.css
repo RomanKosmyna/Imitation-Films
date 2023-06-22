@@ -9,6 +9,25 @@
     border-radius: 12px;
     border: none;
     background-color: var(--orange-color);
-    color: var(--main-text-color);
+    color: var(--white-text-color);
     font-size: 1.5rem;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+}
+
+.filterBtn:hover {
+    background-color: var(--black-background);
+    border: 1px solid var(--white-text-color);
+}
+
+@media (min-width: 680px) {
+    .filterContainer {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .filterContainer {
+        width: 30%;
+    }
 }

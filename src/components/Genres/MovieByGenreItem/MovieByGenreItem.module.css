@@ -4,6 +4,14 @@
     background-color: var(--main-background);
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in;
+    box-shadow: 0 0 3px var(--main-text-color);
+    border-radius: 8px;
+}
+
+.movieItemContainer:hover {
+    box-shadow: 0 0 20px red;
 }
 
 .imageContainer {
@@ -13,6 +21,8 @@
 .imageContainer > img {
     width: var(--w100);
     height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .titleContainer {
@@ -23,4 +33,17 @@
 .title {
     color: var(--main-text-color);
     font-size: 1rem;
+}
+
+@media (min-width: 910px) {
+    .movieItemContainer {
+        width: 32%;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1500px) {
+    .movieItemContainer {
+        width: 24%;
+    }
 }

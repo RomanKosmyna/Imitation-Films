@@ -1,7 +1,7 @@
 .viewDetailsContainer {
     width: var(--w100);
     height: 40px;
-    background-color: var(--main-background);
+    background-color: transparent;
     display: flex;
     align-items: center;
     margin-top: 0.5rem;
@@ -15,4 +15,27 @@
     border: 1px solid var(--main-text-color);
     border-radius: 8px;
     padding: 0.5rem 1rem;
+    background-color: var(--main-background);
+    transition: background-color 0.2s ease-in;
 }
+
+.viewLink:hover {
+    background-color: var(--view-details-btn-bg-hover);
+    color: var(--view-details-btn-text-hover);
+}
+
+@media (min-height: 680px) {
+    .viewLink {
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (min-height: 915px) {
+    .viewLink {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.5rem;
+    }
+}
+

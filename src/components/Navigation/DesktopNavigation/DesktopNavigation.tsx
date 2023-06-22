@@ -1,6 +1,7 @@
 import {NavLink} from "react-router-dom";
 
 import styles from "./DesktopNavigation.module.css";
+import {UserInfo} from "../../UserInfo";
 
 const DesktopNavigation = () => {
     return (
@@ -23,6 +24,8 @@ const DesktopNavigation = () => {
                         Your Watchlist
                     </NavLink>
                 </li>
+
+                <UserInfo/>
             </ul>
         </nav>
     );

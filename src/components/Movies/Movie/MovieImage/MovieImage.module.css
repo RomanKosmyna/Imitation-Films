@@ -1,6 +1,6 @@
 .imageContainer {
     width: 50%;
-    height: auto;
+    max-height: 450px;
     display: flex;
     justify-content: center;
     position: relative;
