@@ -3,7 +3,7 @@ import MovieByGenreItem from "../MovieByGenreItem/MovieByGenreItem";
 import styles from "./MoviesByGenre.module.css";
 
 const MoviesByGenre = ({movies}: { movies: any[] }) => {
-    console.log(movies)
+
     return (
         <>
             {movies.length !== 0 && (

@@ -9,6 +9,11 @@ interface IProps {
     setter: (value: string) => void;
 }
 
+interface IGenre {
+    id: number;
+    name: string;
+}
+
 const GenreMenuMain = ({activeGenre, setter}: IProps) => {
     const [genres, setGenres] = useState([]);
 
@@ -18,7 +23,7 @@ const GenreMenuMain = ({activeGenre, setter}: IProps) => {
 
     return (
         <ul className={styles.genreMain}>
-            {genres.map(genre => <GenreMenuMainItem key={genre.id} activeGenre={activeGenre} genre={genre} setter={setter}/>)}
+            {genres.map((genre: IGenre) => <GenreMenuMainItem key={genre.id} activeGenre={activeGenre} genre={genre} setter={setter}/>)}
         </ul>
     );
 };
