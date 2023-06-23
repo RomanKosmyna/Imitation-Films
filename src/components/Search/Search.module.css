@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+.inputContainer:focus {
+    border: 1px solid white;
+}
+
 .inputContainer {
     width: var(--w100);
     display: flex;

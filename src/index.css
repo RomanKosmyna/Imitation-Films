@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: sans-serif, serif;
   -webkit-font-smoothing: antialiased;
@@ -54,15 +61,6 @@ body {
   --clear-icon-color: #000;
 }
 
-/*.no-overflow {*/
-/*  overflow-y: hidden;*/
-/*}*/
-
-/*#root {*/
-/*  width: 100%;*/
-/*  height: 100%;*/
-/*}*/
-
 .app {
   width: 100%;
   height: 100%;
@@ -71,13 +69,10 @@ body {
   justify-content: center;
 }
 
-html {
-  overflow: scroll;
+#root {
+  width: 100%;
+  height: 100%;
 }
-
-/*::-webkit-scrollbar {*/
-/*  display: none;*/
-/*}*/
 
 ul {
   list-style: none;
@@ -85,36 +80,6 @@ ul {
   padding: 0;
 }
 
-/*.menuBtn {*/
-/*  display: flex;*/
-/*  justify-content: space-between;*/
-/*  position: fixed;*/
-/*  bottom: 34%;*/
-/*  left: 0;*/
-/*  right: 0;*/
-/*  margin: 0 14px;*/
-/*}*/
-
-/*.menuBtn > button {*/
-/*  width: 60px;*/
-/*  opacity: 0.5;*/
-/*  border: none;*/
-/*  color: #fff;*/
-/*  cursor: pointer;*/
-/*  height: 55px;*/
-/*  background-size: 300% 100%;*/
-/*  border-radius: 50px;*/
-/*  -o-transition: all .4s ease-in-out;*/
-/*  -webkit-transition: all .4s ease-in-out;*/
-/*  transition: all .4s ease-in-out;*/
-/*  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);*/
-/*}*/
-
-/*.menuBtn > button:hover {*/
-/*  opacity: 1;*/
-/*  background-position: 100% 0;*/
-/*  moz-transition: all .4s ease-in-out;*/
-/*  -o-transition: all .4s ease-in-out;*/
-/*  -webkit-transition: all .4s ease-in-out;*/
-/*  transition: all .4s ease-in-out;*/
-/*}*/
+.no-overflow {
+  overflow: hidden;
+}

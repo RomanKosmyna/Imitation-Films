@@ -15,7 +15,7 @@ const Search = () => {
         if (inputValue !== "") {
             setTimeout(async () => {
                 await dispatch(searchActions.searchMovie({movie: inputValue}));
-            }, 1000);
+            }, 500);
         } else {
             dispatch(searchActions.searchMovie([]));
         }

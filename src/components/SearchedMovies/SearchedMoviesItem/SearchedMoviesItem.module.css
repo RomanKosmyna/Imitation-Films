@@ -8,8 +8,8 @@
     text-decoration: none;
 }
 
-.searchedMovieContainer::before {
-    padding: 0 0;
+.searchedMovieContainer:hover {
+    background-color: var(--orange-color);
 }
 
 .searchedMovieImageContainer {
