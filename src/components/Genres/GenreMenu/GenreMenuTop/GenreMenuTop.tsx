@@ -1,6 +1,7 @@
-import styles from "./GenreMenuTop.module.css";
-import {useAppDispatch, useAppSelector} from "../../../../hooks";
 import {toggleActions} from "../../../../redux/slices/toggle.slice";
+import {useAppDispatch, useAppSelector} from "../../../../hooks";
+
+import styles from "./GenreMenuTop.module.css";
 
 const GenreMenuTop = () => {
     const dispatch = useAppDispatch();

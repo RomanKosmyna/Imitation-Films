@@ -5,7 +5,14 @@ import {useSearchParams} from "react-router-dom";
 
 import styles from "./GenreMenuMainItem.module.css";
 
-const GenreMenuMainItem = ({activeGenre, genre, setter}) => {
+interface IProps {
+    activeGenre: string;
+    genre: object;
+    setter: (value: string) => void;
+}
+
+const GenreMenuMainItem = ({activeGenre, genre, setter}: IProps) => {
+    console.log(setter)
     const dispatch = useAppDispatch();
     const {genreMenu} = useAppSelector(state => state.toggleReducer);
     const [query] = useSearchParams({page: '1'});

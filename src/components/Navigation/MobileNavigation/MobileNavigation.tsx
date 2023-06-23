@@ -5,7 +5,6 @@ import profilePhoto from "../../../images/obi.png";
 import ThemeMode from "../../ThemeMode/ThemeMode";
 
 import styles from "./MobileNavigation.module.css";
-import {useEffect} from "react";
 
 const MobileNavigation = () => {
         const dispatch = useAppDispatch();

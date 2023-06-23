@@ -1,10 +1,8 @@
+import ThemeMode from "../ThemeMode/ThemeMode";
 import profile from "../../images/obi.png";
+import {useState} from "react";
 
 import styles from "./UserInfo.module.css";
-import {useState} from "react";
-import profilePhoto from "../../images/obi.png";
-import {NavLink} from "react-router-dom";
-import ThemeMode from "../ThemeMode/ThemeMode";
 
 const UserInfo = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);

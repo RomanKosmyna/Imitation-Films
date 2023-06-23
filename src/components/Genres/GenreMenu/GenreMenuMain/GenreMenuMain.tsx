@@ -1,9 +1,15 @@
-import styles from "./GenreMenuMain.module.css";
-import {useEffect, useState} from "react";
-import {movieService} from "../../../../services";
 import GenreMenuMainItem from "./GenreMenuMainItem/GenreMenuMainItem";
+import {movieService} from "../../../../services";
+import {useEffect, useState} from "react";
 
-const GenreMenuMain = ({activeGenre, setter}) => {
+import styles from "./GenreMenuMain.module.css";
+
+interface IProps {
+    activeGenre: string;
+    setter: (value: string) => void;
+}
+
+const GenreMenuMain = ({activeGenre, setter}: IProps) => {
     const [genres, setGenres] = useState([]);
 
     useEffect(() => {
