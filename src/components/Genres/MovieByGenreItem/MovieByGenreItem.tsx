@@ -1,9 +1,9 @@
 import {imageBaseURL} from "../../../configs";
-
-import styles from "./MovieByGenreItem.module.css";
 import {Link} from "react-router-dom";
 
-const MovieByGenreItem = ({movie}) => {
+import styles from "./MovieByGenreItem.module.css";
+
+const MovieByGenreItem = ({movie}: object) => {
     const {id, poster_path, title} = movie;
 
     return (

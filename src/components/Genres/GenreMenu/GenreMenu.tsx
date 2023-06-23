@@ -4,7 +4,12 @@ import {useAppSelector} from "../../../hooks";
 
 import styles from "./GenreMenu.module.css";
 
-const GenreMenu = ({activeGenre, setter}: {activeGenre: string, setter: object}) => {
+interface IProps {
+    activeGenre: string;
+    setter: (value: string) => void;
+}
+
+const GenreMenu = ({activeGenre, setter}: IProps) => {
     const {genreMenu} = useAppSelector(state => state.toggleReducer);
 
     return (

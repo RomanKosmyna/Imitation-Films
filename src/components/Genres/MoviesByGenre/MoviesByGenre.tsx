@@ -2,7 +2,7 @@ import MovieByGenreItem from "../MovieByGenreItem/MovieByGenreItem";
 
 import styles from "./MoviesByGenre.module.css";
 
-const MoviesByGenre = ({movies}) => {
+const MoviesByGenre = ({movies}: []) => {
 
     return (
         <>
