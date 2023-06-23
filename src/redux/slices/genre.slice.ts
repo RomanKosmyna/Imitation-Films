@@ -3,7 +3,7 @@ import {movieService} from "../../services";
 
 interface IState {
     genres: object,
-    moviesByGenre: object,
+    moviesByGenre: [],
     currentPage: null,
     totalPages: null,
     errors: boolean,

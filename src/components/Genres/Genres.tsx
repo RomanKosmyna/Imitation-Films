@@ -1,13 +1,12 @@
-import {useEffect, useState} from "react";
-import {movieService} from "../../services";
-import {useAppDispatch, useAppSelector} from "../../hooks";
-import {useSearchParams} from "react-router-dom";
-
-import styles from "./Genres.module.css";
 import FilterByGenre from "./FilterByGenre/FilterByGenre";
 import MoviesByGenre from "./MoviesByGenre/MoviesByGenre";
+import {useAppDispatch, useAppSelector} from "../../hooks";
+import {useSearchParams} from "react-router-dom";
 import GenreMenu from "./GenreMenu/GenreMenu";
-import GenrePagination from "./GenrePagination/GenrePagination";
+import {movieService} from "../../services";
+import {useEffect, useState} from "react";
+
+import styles from "./Genres.module.css";
 
 const Genres = () => {
     const dispatch = useAppDispatch();
@@ -16,7 +15,6 @@ const Genres = () => {
     const [genreQuery] = useSearchParams({page: '1'});
     const {moviesByGenre} = useAppSelector(state => state.genresReducer);
     useEffect(() => {
-        console.log(moviesByGenre)
         if (moviesByGenre.length !== 0) {
             setMovies(moviesByGenre);
         } else {
