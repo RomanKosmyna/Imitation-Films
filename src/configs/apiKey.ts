@@ -1,6 +1,5 @@
-const apiToken = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYjc3MGJjYmUzYTZjNDJlYjQ3NGVlMTNjZjEwZjRiYSIsInN1YiI6IjYzZWU3M2UwZjkyNTMy' +
-    'MDBjMzAwZGFjZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jH51TF_cDGQF2i2RBU7UBLAKbMeTGdONzH0ni0Hb5b4';
+const apiToken = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZjQ5NGQwOGI2ZWI1YTk0ZThmYmNlYjQ5YjkzYWYyMCIsInN1YiI6IjYzZWU3M2UwZjkyNTMyMDBjMzAwZGFjZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.DRGFFtC085rTNlkFVNBn3BJbHGhASuekY9euzRIJrgI';
 
-const apiKey = 'eb770bcbe3a6c42eb474ee13cf10f4ba';
+const apiKey = '4f494d08b6eb5a94e8fbceb49b93af20';
 
 export {apiToken, apiKey};
