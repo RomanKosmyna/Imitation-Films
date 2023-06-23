@@ -31,7 +31,6 @@ const Genres = () => {
             </h2>
             <MoviesByGenre movies={movies}/>
             <GenreMenu activeGenre={chosenGenre} setter={setChosenGenre}/>
-            {/*<GenrePagination/>*/}
         </div>
     );
 };
