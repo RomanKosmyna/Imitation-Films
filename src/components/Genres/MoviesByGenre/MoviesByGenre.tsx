@@ -1,8 +1,13 @@
 import MovieByGenreItem from "../MovieByGenreItem/MovieByGenreItem";
+import {IMovieByGenre} from "../../../interfaces";
 
 import styles from "./MoviesByGenre.module.css";
 
-const MoviesByGenre = ({movies}: { movies: any[] }) => {
+interface IProps {
+    movies: IMovieByGenre[];
+}
+
+const MoviesByGenre = ({movies}: IProps) => {
 
     return (
         <>

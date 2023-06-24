@@ -7,6 +7,7 @@ interface IRuntime {
 }
 
 const MovieRuntime: FC<IRuntime> = ({runtime}) => {
+
     const timeConvert = (runtime) => {
         const hours = Math.floor(runtime / 60);
         const minutes = runtime % 60;

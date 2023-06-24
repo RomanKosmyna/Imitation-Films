@@ -1,20 +1,37 @@
+import MovieBackdrop from "../MovieBackdrop/MovieBackdrop";
+import styles from "./MovieTrailer.module.css";
 import ReactPlayer from "react-player";
 
-import styles from "./MovieTrailer.module.css";
 import {FC} from "react";
-import MovieBackdrop from "../MovieBackdrop/MovieBackdrop";
 
 interface IProps {
-    video: object;
+    videos: IResults;
     backdrop: string;
     title: string;
 }
 
-const MovieTrailer: FC<IProps> = ({video, backdrop, title}) => {
-    const {results} = video;
+interface IVideo {
+    id: string;
+    iso_639_1: string;
+    iso_3166_1: string;
+    key: string;
+    name: string;
+    official: boolean;
+    published_at: string;
+    site: string;
+    size: number;
+    type: string;
+}
+
+interface IResults {
+    results: IVideo[];
+}
+
+const MovieTrailer: FC<IProps> = ({videos, backdrop, title}) => {
+    const {results} = videos;
 
     const getTrailer = () => {
-        return results.map(video => video).find(video => video.name === 'Official Trailer' && video.official === true);
+        return results.map(video => video).find(video => video.name === 'Official Trailer' && video.official);
     }
 
     const videoValue = getTrailer();
@@ -22,7 +39,7 @@ const MovieTrailer: FC<IProps> = ({video, backdrop, title}) => {
 
     return (
         <>
-            {(video && videoValue?.key) ? (
+            {(videos && videoValue?.key) ? (
                 <div className={styles.trailerContainer}>
                     <ReactPlayer
                         width={"100%"}

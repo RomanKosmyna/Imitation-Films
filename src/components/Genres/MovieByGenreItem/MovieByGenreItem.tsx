@@ -1,9 +1,15 @@
+import {IMovieByGenre} from "../../../interfaces";
 import {imageBaseURL} from "../../../configs";
 import {Link} from "react-router-dom";
 
 import styles from "./MovieByGenreItem.module.css";
 
-const MovieByGenreItem = ({movie}: object) => {
+interface IProps {
+    movie: IMovieByGenre;
+}
+
+const MovieByGenreItem = ({movie}: IProps) => {
+
     const {id, poster_path, title} = movie;
 
     return (

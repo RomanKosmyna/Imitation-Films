@@ -7,8 +7,13 @@ import styles from "./GenreMenuMainItem.module.css";
 
 interface IProps {
     activeGenre: string;
-    genre: object;
+    genre: IGenre;
     setter: (value: string) => void;
+}
+
+interface IGenre {
+    id: number;
+    name: string;
 }
 
 const GenreMenuMainItem = ({activeGenre, genre, setter}: IProps) => {

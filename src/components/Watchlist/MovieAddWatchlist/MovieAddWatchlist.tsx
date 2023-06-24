@@ -8,7 +8,7 @@ interface IProps {
 }
 
 const MovieAddWatchlist: FC<IProps> = ({movie}) => {
-    const {id, title, poster_path} = movie;
+    const {id, title, poster_path} = movie || {};
     const [status, setStatus] = useState(
         localStorage.getItem("status") === "true"
     );
@@ -20,12 +20,12 @@ const MovieAddWatchlist: FC<IProps> = ({movie}) => {
     const bookmark = () => {
         const movieObject = {id, title, poster_path};
         const movieJSON = JSON.stringify(movieObject);
-        localStorage.setItem(title, movieJSON);
+        localStorage.setItem(title || "", movieJSON);
         setStatus(!status);
     };
 
     const unbookmark = () => {
-        localStorage.removeItem(title);
+        localStorage.removeItem(title || "");
         setStatus(!status);
     };
 

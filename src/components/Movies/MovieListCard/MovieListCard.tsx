@@ -14,7 +14,12 @@ interface IData {
     genre_ids: number[];
 }
 
-const MovieListCard = ({data}: IData) => {
+interface Data {
+    data: IData;
+}
+
+const MovieListCard = ({data}: Data) => {
+
     const {id, title, release_date, poster_path} = data;
     return (
         <div className={styles.movieCardContainer}>

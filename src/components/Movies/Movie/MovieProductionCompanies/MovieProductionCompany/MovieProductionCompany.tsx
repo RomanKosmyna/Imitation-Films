@@ -4,7 +4,14 @@ import {imageBaseURL} from "../../../../../configs";
 import styles from "./MovieProductionCompany.module.css";
 
 interface ICompany {
-    company: object;
+    company: Company;
+}
+
+interface Company {
+    id: number;
+    logo_path: string;
+    name: string;
+    origin_country: string;
 }
 
 const MovieProductionCompany: FC<ICompany> = ({company}) => {

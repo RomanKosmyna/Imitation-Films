@@ -6,7 +6,7 @@ import styles from "./Search.module.css";
 
 const Search = () => {
     const dispatch = useAppDispatch();
-    const inputRef = useRef<HTMLInputElement>();
+    const inputRef = useRef<HTMLInputElement | null>(null);
     const [value, setValue] = useState<string>("");
 
     const getInputValue = () => {
@@ -17,7 +17,7 @@ const Search = () => {
                 await dispatch(searchActions.searchMovie({movie: inputValue}));
             }, 500);
         } else {
-            dispatch(searchActions.searchMovie([]));
+            dispatch(searchActions.searchMovie({movie: ""}));
         }
     };
 

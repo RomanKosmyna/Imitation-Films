@@ -17,7 +17,11 @@ import MovieAddWatchlist from "../../Watchlist/MovieAddWatchlist/MovieAddWatchli
 import styles from "./Movie.module.css";
 
 interface IProps {
-    movie: IMovie | null;
+    movie: IMovie;
+}
+
+interface IGenres {
+    genres: {id: number; name: string}[];
 }
 
 const Movie: FC<IProps> = ({movie}) => {
@@ -60,7 +64,7 @@ const Movie: FC<IProps> = ({movie}) => {
             <MovieOverview overview={overview}/>
             <MovieRating rating={vote_average}/>
             <MovieVote count={vote_count}/>
-            <MovieTrailer video={videos} backdrop={backdrop_path} title={title}/>
+            <MovieTrailer videos={videos} backdrop={backdrop_path} title={title}/>
             <MovieProductionCompanies companies={production_companies}/>
         </div>
     );

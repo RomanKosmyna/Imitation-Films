@@ -1,8 +1,9 @@
 import {createAsyncThunk, createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {searchService} from "../../services";
+import {IMovieByGenre} from "../../interfaces";
 
 interface IState {
-    searchedMovie: object[],
+    searchedMovie: IMovieByGenre[],
     loading: boolean,
     errors: null;
 }

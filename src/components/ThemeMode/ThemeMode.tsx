@@ -1,10 +1,10 @@
-import {useAppDispatch, useAppSelector} from "../../hooks/redux.hooks";
+import {useAppDispatch, useAppSelector} from "../../hooks";
 
 import styles from "./ThemeMode.module.css";
 
 const ThemeMode = () => {
     const dispatch = useAppDispatch();
-    const selectTheme = (state) => state.themeReducer;
+    const selectTheme = (state: { themeReducer: boolean }) => state.themeReducer;
     const themeSwitch = useAppSelector(selectTheme);
 
     const toggleTheme = () => {

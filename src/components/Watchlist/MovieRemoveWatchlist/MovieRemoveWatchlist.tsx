@@ -2,7 +2,7 @@ import styles from "./MovieRemoveWatchlist.module.css";
 
 interface IProps {
     title: string;
-    onRemove: object;
+    onRemove: () => void;
 }
 
 const MovieRemoveWatchlist = ({title, onRemove}: IProps) => {

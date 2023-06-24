@@ -8,11 +8,14 @@ const Watchlist = () => {
 
     useEffect(() => {
         const allMovies = Object.keys(localStorage);
-        const getMovies = allMovies.map(movie => JSON.parse(localStorage.getItem(movie)));
+        const getMovies = allMovies.map(movie => {
+            const movieData = localStorage.getItem(movie);
+            return movieData ? JSON.parse(movieData) : null;
+        });
         setMovies(getMovies);
     }, []);
 
-    const removeMovie = (title) => {
+    const removeMovie = (title: string) => {
         localStorage.removeItem(title);
         const updateMovies = movies.filter(movie => movie.title !== title);
         setMovies(updateMovies);

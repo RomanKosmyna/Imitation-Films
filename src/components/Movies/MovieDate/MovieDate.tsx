@@ -27,7 +27,8 @@ const MovieDate: FC<IProps> = ({date}) => {
     const month = splitDate[1];
     const day = splitDate[2];
 
-    const getDate = (month) => {
+    const getDate = (month: string | undefined) => {
+
         const getMonth = () => {
             if (month !== undefined && month.startsWith("0")) {
                 const sliceMonth = month.slice(1);
