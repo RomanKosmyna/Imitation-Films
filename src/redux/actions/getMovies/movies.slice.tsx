@@ -1,8 +1,9 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+import {IMovieByGenre} from "../../../interfaces";
 import {movieService} from "../../../services";
 
 interface IState {
-    allMovies: object,
+    allMovies: IMovieByGenre[],
     currentPage: null,
     totalPages: null,
     errors: boolean,

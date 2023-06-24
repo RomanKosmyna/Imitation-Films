@@ -1,8 +1,8 @@
 import MovieBackdrop from "../MovieBackdrop/MovieBackdrop";
-import styles from "./MovieTrailer.module.css";
 import ReactPlayer from "react-player";
-
 import {FC} from "react";
+
+import styles from "./MovieTrailer.module.css";
 
 interface IProps {
     videos: IResults;
@@ -27,7 +27,7 @@ interface IResults {
     results: IVideo[];
 }
 
-const MovieTrailer: FC<IProps> = ({videos = {results: []}, backdrop, title}) => {
+const MovieTrailer: FC<IProps> = ({videos , backdrop, title}) => {
     const {results} = videos;
 
     const getTrailer = () => {

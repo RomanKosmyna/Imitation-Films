@@ -1,7 +1,10 @@
 import {MainLayout} from "../../layouts/MainLayout";
 import {Navigate, useLocation, useRoutes} from "react-router-dom";
-import {GenresPage, MoviePage, MoviesPage, NotFoundPage} from "../../pages";
 import {WatchListPage} from "../../pages/WatchListPage";
+import {NotFoundPage} from "../../pages/NotFoundPage";
+import {GenresPage} from "../../pages/GenresPage";
+import {MoviesPage} from "../../pages/MoviesPage";
+import {MoviePage} from "../../pages/MoviePage";
 
 const Routes = () => {
     const location = useLocation();

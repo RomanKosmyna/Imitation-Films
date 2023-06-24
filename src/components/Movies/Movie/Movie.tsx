@@ -21,7 +21,32 @@ interface IProps {
 }
 
 interface IGenres {
-    genres: {id: number; name: string}[];
+    id: number;
+    name: string;
+}
+
+interface ICompany {
+    id: number;
+    logo_path: string;
+    name: string;
+    origin_country: string;
+}
+
+interface IVideo {
+    id: string;
+    iso_639_1: string;
+    iso_3166_1: string;
+    key: string;
+    name: string;
+    official: boolean;
+    published_at: string;
+    site: string;
+    size: number;
+    type: string;
+}
+
+interface IResults {
+    results: IVideo[];
 }
 
 const Movie: FC<IProps> = ({movie}) => {
@@ -57,15 +82,15 @@ const Movie: FC<IProps> = ({movie}) => {
                 </div>
             </div>
             <div className={styles.genreWatchlistContainer}>
-                <MovieGenre genres={genres}/>
+                <MovieGenre genres={genres as IGenres[]}/>
                 <MovieAddWatchlist movie={movie}/>
             </div>
             <MovieTagline tagline={tagline}/>
             <MovieOverview overview={overview}/>
             <MovieRating rating={vote_average}/>
             <MovieVote count={vote_count}/>
-            <MovieTrailer videos={videos} backdrop={backdrop_path} title={title}/>
-            <MovieProductionCompanies companies={production_companies}/>
+            <MovieTrailer videos={videos as IResults} backdrop={backdrop_path} title={title}/>
+            <MovieProductionCompanies companies={production_companies as ICompany[]}/>
         </div>
     );
 };
