@@ -2,6 +2,7 @@ import {IMovie} from "../../../interfaces";
 import {FC, useEffect, useState} from "react";
 
 import styles from "./MovieAddWatchlist.module.css";
+import {useLocation} from "react-router-dom";
 
 interface IProps {
     movie: IMovie | null;
@@ -12,6 +13,13 @@ const MovieAddWatchlist: FC<IProps> = ({movie}) => {
     const [status, setStatus] = useState(
         localStorage.getItem("status") === "true"
     );
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location) {
+            setStatus(status === "false")
+        }
+    },[location]);
 
     useEffect(() => {
         localStorage.setItem("status", status.toString());
@@ -20,19 +28,19 @@ const MovieAddWatchlist: FC<IProps> = ({movie}) => {
     const bookmark = () => {
         const movieObject = {id, title, poster_path};
         const movieJSON = JSON.stringify(movieObject);
-        localStorage.setItem(title || "", movieJSON);
+        localStorage.setItem(title, movieJSON);
         setStatus(!status);
     };
 
     const unbookmark = () => {
-        localStorage.removeItem(title || "");
+        localStorage.removeItem(title);
         setStatus(!status);
     };
 
     return (
         <div className={styles.addWatchlistContainer}>
             {
-                status ?
+                status || localStorage.getItem(title) ?
                     <button type="button" className={styles.watchlistBtn} onClick={unbookmark}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                              stroke="currentColor" className={`w-6 h-6 ${styles.added}`}>

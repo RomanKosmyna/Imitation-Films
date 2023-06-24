@@ -25,10 +25,14 @@ const MovieWatchlistItem = ({data, onRemove}: IProps) => {
     return (
         <div className={styles.watchlistItemContainer}>
             <PosterPreview poster={poster_path} alt={title}/>
-            <h2 className={styles.itemHeading}>{title}</h2>
-            <div className={styles.buttonContainer}>
-                <MovieViewDetails id={id}/>
-                <MovieRemoveWatchlist title={title} onRemove={removeFromWatchlist}/>
+            <div className={styles.mainItemPartContainer}>
+                <div className={styles.headingContainer}>
+                    <h2 className={styles.itemHeading}>{title}</h2>
+                </div>
+                <div className={styles.buttonContainer}>
+                    <MovieViewDetails id={id}/>
+                    <MovieRemoveWatchlist title={title} onRemove={removeFromWatchlist}/>
+                </div>
             </div>
         </div>
     );

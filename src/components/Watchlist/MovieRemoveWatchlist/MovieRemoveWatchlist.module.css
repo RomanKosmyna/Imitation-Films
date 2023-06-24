@@ -1,10 +1,23 @@
+.removeBtnContainer {
+    width: 120px;
+    height: 34px;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 .removeBtn {
+    width: var(--w100);
+    height: var(--h100);
     background-color: red;
     color: var(--white-text-color);
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-weight: 700;
     border: 1px solid red;
     border-radius: 8px;
-    padding: 0.5rem 1rem;
-    margin-top: 0.5rem;
+    padding: 0 1rem;
+}
+
+@media (min-width: 680px) {
 }

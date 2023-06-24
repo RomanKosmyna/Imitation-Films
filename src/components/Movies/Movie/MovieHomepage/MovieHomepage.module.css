@@ -13,4 +13,10 @@
     border: 1px solid var(--grey-color-1);
     border-radius: 8px;
     font-family: sans-serif, serif;
+    transition: background-color 0.2s ease-in;
+}
+
+.homepageLink:hover {
+    background-color: var(--view-details-btn-bg-hover);
+    color: var(--view-details-btn-text-hover);
 }

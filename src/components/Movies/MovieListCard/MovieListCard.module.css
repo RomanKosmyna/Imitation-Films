@@ -12,7 +12,6 @@
 
 .movieCardContainer:hover {
     box-shadow: 0 0 5px var(--main-text-color);
-    /*border: 1px solid var(--main-text-color);*/
     background-color: var(--view-details-btn-bg-card-hover);
 }
 

@@ -12,11 +12,15 @@
 
 .listItem {
     margin: 0 0.5rem;
+    border-radius: 8px;
 }
 
 .listItem > a {
     color: var(--grey-color-2);
     text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    transition: background-color 0.2s ease-in;
+    border-radius: 8px;
 }
 
 .listItem > a[class='active'] {
@@ -25,16 +29,7 @@
     text-underline-offset: 20px;
 }
 
-/*.deskNavContainer > a {*/
-/*    text-decoration: none;*/
-/*    margin: 0 .8em;*/
-/*    color: var(--header-navigation);*/
-/*    font-size: 24px;*/
-/*    font-weight: 700;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.deskNavContainer > a:hover {*/
-/*    color: var(--nav-hover);*/
-/*}*/
+.listItem > a:hover {
+    color: var(--orange-color);
+    background-color: var(--main-text-color);
+}

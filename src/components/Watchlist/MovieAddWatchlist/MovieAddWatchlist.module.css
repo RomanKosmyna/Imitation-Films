@@ -17,18 +17,23 @@
     display: flex;
     align-items: center;
     box-shadow: 0 0 10px var(--main-text-color);
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
 }
 
 .bookmark {
     width: var(--w100);
     height: var(--h100);
+    cursor: pointer;
 }
 
 .added {
     width: var(--w100);
     height: var(--h100);
     background-color: var(--orange-color);
+    transition: background-color 0.2s ease-in;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .add {

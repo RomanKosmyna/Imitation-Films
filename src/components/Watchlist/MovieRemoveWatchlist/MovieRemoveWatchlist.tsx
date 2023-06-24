@@ -12,13 +12,15 @@ const MovieRemoveWatchlist = ({title, onRemove}: IProps) => {
     };
 
     return (
-            <button
-                type={"button"}
-                className={styles.removeBtn}
-                onClick={removeFromWatchlist}
-            >
-                Remove
-            </button>
+            <div className={styles.removeBtnContainer}>
+                <button
+                    type={"button"}
+                    className={styles.removeBtn}
+                    onClick={removeFromWatchlist}
+                >
+                    Remove
+                </button>
+            </div>
     );
 };
 

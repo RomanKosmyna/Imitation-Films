@@ -1,12 +1,23 @@
 .watchlistItemContainer {
-    width: var(--w100);
+    width: 48%;
+    min-height: 220px;
     background-color: var(--main-background);
     border-radius: 8px;
     border: 1px solid var(--grey-color-1);
     padding: var(--padding-gap-1);
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.2s ease-in;
+}
+
+.watchlistItemContainer:hover {
+    border: 1px solid red;
+    background-color: var(--view-details-btn-bg-card-hover);
 }
 
 .itemHeading {
+    font-size: 1.2rem;
+    word-break: break-word;
     color: var(--main-text-color);
 }
 
@@ -17,7 +28,64 @@
     font-size: 1.1rem;
 }
 
-.buttonContainer {
+.mainItemPartContainer {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 1rem;
+}
+
+.buttonContainer {
+    width: var(--w100);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+@media (min-width: 680px) {
+    .watchlistItemContainer {
+        height: 240px;
+        flex-direction: row;
+    }
+
+    .headingContainer {
+        height: 40%;
+        display: flex;
+        align-items: center;
+    }
+
+    .buttonContainer {
+        width: var(--w100);
+        height: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: auto;
+    }
+
+    .buttonContainer:nth-child(1),
+    .buttonContainer:nth-child(2) {
+        justify-content: flex-start;
+    }
+
+    .mainItemPartContainer {
+        display: flex;
+        width: calc(100% - 130px);
+    }
+
+    .buttonContainer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 915px) {
+    .watchlistItemContainer {
+        width: 32%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .watchlistItemContainer {
+        width: 24%;
+    }
 }

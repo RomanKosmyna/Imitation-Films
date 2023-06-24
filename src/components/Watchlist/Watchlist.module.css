@@ -1,8 +1,8 @@
 .watchlistContainer {
     width: var(--w100);
-    height: var(--h100);
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
     row-gap: 1rem;
     margin-top: 1rem;
 }

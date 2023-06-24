@@ -1,22 +1,28 @@
 .viewDetailsContainer {
-    width: var(--w100);
-    height: 40px;
+    width: 120px;
+    height: 34px;
     background-color: transparent;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-top: 0.5rem;
 }
 
 .viewLink {
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 700;
+    width: var(--w100);
+    height: var(--h100);
+    background-color: var(--main-background);
     color: var(--main-text-color);
+    font-size: 0.8rem;
+    font-weight: 700;
     border: 1px solid var(--main-text-color);
     border-radius: 8px;
     padding: 0.5rem 1rem;
-    background-color: var(--main-background);
+    text-decoration: none;
     transition: background-color 0.2s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .viewLink:hover {
@@ -24,15 +30,15 @@
     color: var(--view-details-btn-text-hover);
 }
 
-@media (min-height: 680px) {
+@media (min-width: 680px) {
     .viewLink {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 0.5rem 0.5rem;
         margin-top: 0.5rem;
     }
 }
 
-@media (min-height: 915px) {
+@media (min-width: 915px) {
     .viewLink {
         font-size: 0.9rem;
         padding: 0.5rem 0.5rem;
