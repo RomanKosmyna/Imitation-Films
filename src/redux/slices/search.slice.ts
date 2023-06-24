@@ -20,7 +20,7 @@ const searchMovie = createAsyncThunk(
         try {
             const {data} = await searchService.searchMovie(movie);
             return data;
-        } catch (e) {
+        } catch (e: any) {
             return rejectWithValue(e.response.data);
         }
     }

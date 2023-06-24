@@ -18,7 +18,7 @@ const initialState: IState = {
 };
 
 interface GetMoviesParams {
-    page: string;
+    page: string | null;
 }
 
 const getMovies = createAsyncThunk(
@@ -27,7 +27,7 @@ const getMovies = createAsyncThunk(
         try {
             const {data} = await movieService.getMovies(page);
             return data;
-        } catch (e) {
+        } catch (e: any) {
 
             return rejectWithValue(e.response.data as any)
         }

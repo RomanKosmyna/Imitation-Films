@@ -3,7 +3,13 @@ import {Link} from "react-router-dom";
 
 import styles from "./SearchedMoviesItem.module.css";
 
-const SearchedMoviesItem = ({id, poster_path, title}) => {
+interface IProps {
+    id: number;
+    poster_path: string;
+    title: string;
+}
+
+const SearchedMoviesItem = ({id, poster_path, title}: IProps) => {
     // const {poster_path, title} = data;
 
     return (

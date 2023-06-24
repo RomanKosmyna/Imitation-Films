@@ -3,7 +3,7 @@ import {useAppDispatch, useAppSelector} from "../../../hooks";
 import {IMovieByGenre} from "../../../interfaces";
 import {useSearchParams} from "react-router-dom";
 import {MovieListCard} from "../MovieListCard";
-import {moviesActions} from "../../../redux";
+import {moviesActions} from "../../../redux/actions/getMovies/movies.slice";
 import {useEffect} from "react";
 
 import styles from './MoviesList.module.css';

@@ -27,7 +27,7 @@ interface IResults {
     results: IVideo[];
 }
 
-const MovieTrailer: FC<IProps> = ({videos, backdrop, title}) => {
+const MovieTrailer: FC<IProps> = ({videos = {results: []}, backdrop, title}) => {
     const {results} = videos;
 
     const getTrailer = () => {

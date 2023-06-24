@@ -1,6 +1,6 @@
 import {useAppDispatch, useAppSelector} from "../../../../../hooks";
 import {toggleActions} from "../../../../../redux/slices/toggle.slice";
-import {genresActions} from "../../../../../redux";
+import {genresActions} from "../../../../../redux/slices/genre.slice";
 import {useSearchParams} from "react-router-dom";
 
 import styles from "./GenreMenuMainItem.module.css";
@@ -24,7 +24,8 @@ const GenreMenuMainItem = ({activeGenre, genre, setter}: IProps) => {
 
     const chooseGenre = () => {
         setter(name);
-        dispatch(genresActions.getMoviesByGenre({ id, page: query.get("page"), name }));
+        const page = query.get("page") || "1";
+        dispatch(genresActions.getMoviesByGenre({ id, page: parseInt(page) }));
         dispatch(toggleActions.toggleGenreMenu(!genreMenu));
     };
 

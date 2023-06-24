@@ -37,7 +37,7 @@ const getMoviesByGenre = createAsyncThunk(
         try {
             const {data} = await movieService.getMoviesByGenre(id, page);
             return data;
-        } catch (e) {
+        } catch (e: any) {
             return rejectWithValue(e.response.data as any);
         }
     }

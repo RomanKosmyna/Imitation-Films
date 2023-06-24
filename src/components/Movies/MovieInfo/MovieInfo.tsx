@@ -7,11 +7,11 @@ import {IMovie} from "../../../interfaces";
 import Movie from "../Movie/Movie";
 
 const MovieInfo = () => {
-    const {id}: {id: string} = useParams();
+    const {id} = useParams();
     const [movie, setMovie] = useState<IMovie | null>(null);
 
     useEffect(() => {
-        movieService.getMovieById(id, "videos").then(({data}) => setMovie(data));
+        movieService.getMovieById(Number(id), "videos").then(({data}) => setMovie(data));
     },[id]);
 
     return (

@@ -25,7 +25,7 @@ const Search = () => {
         if (inputRef.current) {
             inputRef.current.value = "";
         }
-        dispatch(searchActions.searchMovie([]));
+        dispatch(searchActions.searchMovie({movie: ""}));
         setValue("");
     };
 

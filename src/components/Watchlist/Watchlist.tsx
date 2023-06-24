@@ -1,10 +1,11 @@
 import MovieWatchlistItem from "./MovieWatchlistItem/MovieWatchlistItem";
 import {useEffect, useState} from "react";
+import {IMovie} from "../../interfaces";
 
 import styles from './Watchlist.module.css';
 
 const Watchlist = () => {
-    const [movies, setMovies] = useState([]);
+    const [movies, setMovies] = useState<IMovie[]>([]);
 
     useEffect(() => {
         const allMovies = Object.keys(localStorage);

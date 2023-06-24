@@ -4,30 +4,37 @@ import styles from "./MoviePagination.module.css";
 
 const MoviePagination = () => {
     const [query, setQuery] = useSearchParams({page: '1'});
-    const page: string = query.get("page");
+    const page: string | null = query.get("page");
 
     const previousPage = () => {
-        const currentPage: string = query.get("page");
+        const currentPage: string | null = query.get("page");
 
-        if (currentPage > 1) {
-            const prevPage: number = parseInt(currentPage) - 1;
+        if (currentPage && parseInt(currentPage) > 1) {
+            const prevPage = parseInt(currentPage) - 1;
             query.set("page", prevPage.toString());
             setQuery(query);
         }
     };
 
     const nextPage = () => {
-      const currentPage = query.get("page");
-      const nextPage = parseInt(currentPage) + 1;
-      query.set("page", nextPage.toString());
-      setQuery(query);
+        const currentPage: string | null = query.get("page");
+
+        if (currentPage && !isNaN(+currentPage)) {
+            const nextPage = parseInt(currentPage) + 1;
+            query.set("page", nextPage.toString());
+            setQuery(query);
+        }
     };
 
     return (
         <div className={styles.paginationContainer}>
-            {page > 1 && <button className={styles.changePage} onClick={previousPage}>{page - 1}</button>}
+            {page && +page > 1 && (
+                <button className={styles.changePage} onClick={previousPage}>
+                    {+page - 1}
+                </button>
+            )}
             <button className={styles.current}>{page}</button>
-            <button className={styles.changePage} onClick={nextPage}>{+page + 1}</button>
+            {page && <button className={styles.changePage} onClick={nextPage}>{+page + 1}</button>}
         </div>
     );
 };
