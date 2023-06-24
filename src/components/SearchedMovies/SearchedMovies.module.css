@@ -15,6 +15,20 @@
     row-gap: 0.7rem;
 }
 
+.searchedMoviesContainer::-webkit-scrollbar {
+    width: 10px;
+}
+
+.searchedMoviesContainer::-webkit-scrollbar-track {
+    background-color: var(--grey-color-1);
+    border-radius: 5px;
+}
+
+.searchedMoviesContainer::-webkit-scrollbar-thumb {
+    background-color: var(--orange-color);
+    border-radius: 5px;
+}
+
 @keyframes slideOut {
     0% {
         height: 0;

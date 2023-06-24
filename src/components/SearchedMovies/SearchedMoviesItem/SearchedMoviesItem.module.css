@@ -6,6 +6,7 @@
     padding: 0.1rem;
     color: var(--main-text-color);font-weight: 700;
     text-decoration: none;
+    transition: background-color 0.2s ease-in;
 }
 
 .searchedMovieContainer:hover {
