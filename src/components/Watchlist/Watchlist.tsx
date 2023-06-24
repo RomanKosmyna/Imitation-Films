@@ -22,8 +22,10 @@ const Watchlist = () => {
         setMovies(updateMovies);
     };
 
+    const filteredMovies = movies.filter((movie) => typeof movie === "object");
+
     return (
-        <div className={styles.watchlistContainer}>
+        <div className={`${styles.watchlistContainer} ${filteredMovies.length < 3 ? styles.flexStart : styles.spaceBetween}`}>
             {movies.map((movie, index) => (
                 typeof movie === "object" &&
                 <MovieWatchlistItem key={index} data={movie} onRemove={removeMovie}

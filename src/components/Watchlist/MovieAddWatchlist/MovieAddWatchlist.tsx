@@ -17,7 +17,7 @@ const MovieAddWatchlist: FC<IProps> = ({movie}) => {
 
     useEffect(() => {
         if (location) {
-            setStatus(status === "false")
+            setStatus(false)
         }
     },[location]);
 
@@ -26,21 +26,25 @@ const MovieAddWatchlist: FC<IProps> = ({movie}) => {
     }, [status]);
 
     const bookmark = () => {
-        const movieObject = {id, title, poster_path};
-        const movieJSON = JSON.stringify(movieObject);
-        localStorage.setItem(title, movieJSON);
-        setStatus(!status);
+        if (title && typeof title === "string") {
+            const movieObject = { id, title, poster_path };
+            const movieJSON = JSON.stringify(movieObject);
+            localStorage.setItem(title, movieJSON);
+            setStatus(!status);
+        }
     };
 
     const unbookmark = () => {
-        localStorage.removeItem(title);
-        setStatus(!status);
+        if (title && typeof title === "string") {
+            localStorage.removeItem(title);
+            setStatus(!status);
+        }
     };
 
     return (
         <div className={styles.addWatchlistContainer}>
             {
-                status || localStorage.getItem(title) ?
+                status || (title && typeof title === "string" && localStorage.getItem(title)) ?
                     <button type="button" className={styles.watchlistBtn} onClick={unbookmark}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                              stroke="currentColor" className={`w-6 h-6 ${styles.added}`}>
