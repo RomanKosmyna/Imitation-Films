@@ -17,14 +17,19 @@ const initialState: IState = {
     loading: false
 };
 
+interface GetMoviesParams {
+    page: string;
+}
+
 const getMovies = createAsyncThunk(
     'moviesSlice/getAllMovies',
-    async ({page}, {rejectWithValue}) => {
+    async ({page}: GetMoviesParams, {rejectWithValue}) => {
         try {
             const {data} = await movieService.getMovies(page);
             return data;
         } catch (e) {
-            return rejectWithValue(e.response.data)
+
+            return rejectWithValue(e.response.data as any)
         }
     }
 );

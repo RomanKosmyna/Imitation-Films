@@ -11,7 +11,7 @@ const GenresPage = () => {
 
     useEffect(() => {
         dispatch(toggleActions.toggleMobNavigation(false));
-        dispatch(searchActions.searchMovie([]));
+        dispatch(searchActions.searchMovie({movie: ""}));
     }, [dispatch]);
 
     return (

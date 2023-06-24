@@ -26,19 +26,19 @@ const getMovieGenres = createAsyncThunk(
             const {data} = await movieService.getAllGenres()
             return data
         } catch (e) {
-            return rejectWithValue(e.response.data)
+            return rejectWithValue(e.response.data as any);
         }
     }
 );
 
 const getMoviesByGenre = createAsyncThunk(
     'genreSlice/getMoviesByGenre',
-    async ({id, page}, {rejectWithValue}) => {
+    async ({id, page}: {id: number, page: number}, {rejectWithValue}) => {
         try {
             const {data} = await movieService.getMoviesByGenre(id, page);
             return data;
         } catch (e) {
-            return rejectWithValue(e.response.data)
+            return rejectWithValue(e.response.data as any);
         }
     }
 );
