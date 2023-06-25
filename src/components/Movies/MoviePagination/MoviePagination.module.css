@@ -2,7 +2,7 @@
     width: var(--w100);
     height: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .changePage,
@@ -14,6 +14,7 @@
     background-color: var(--main-background);
     color: var(--main-text-color);
     cursor: pointer;
+    margin: 0 1rem;
 }
 
 .changePage {
