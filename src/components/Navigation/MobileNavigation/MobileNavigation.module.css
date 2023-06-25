@@ -1,7 +1,7 @@
 .mobNavWrapper {
     width: var(--w100);
     height: var(--h100);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: var(--main-mobile-nav-wrapper-background);

@@ -30,4 +30,9 @@
 .closeIcon {
     color: var(--main-text-color);
     font-size: 1.6rem;
+    transition: color 0.2s ease-in;
+}
+
+.closeIcon:hover {
+    color: var(--orange-color);
 }
