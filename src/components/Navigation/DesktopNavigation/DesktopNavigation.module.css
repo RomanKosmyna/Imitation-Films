@@ -16,7 +16,7 @@
 }
 
 .listItem > a {
-    color: var(--grey-color-2);
+    color: var(--main-text-color);
     text-decoration: none;
     padding: 0.5rem 0.5rem;
     transition: background-color 0.2s ease-in;
