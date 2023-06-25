@@ -19,6 +19,3 @@ Website about films. Uses Axios for data integration from TMDB API, which provid
 • Theme mode 
 <br />
 • Filter by Genre
-
-
-## _Please note: Project is currently optimized for desktop devices only._
