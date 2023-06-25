@@ -8,8 +8,6 @@
     border-top: 1px solid var(--grey-color-1);
     box-sizing: border-box;
     background-color: var(--main-background);
-    /*position: fixed;*/
-    /*bottom: 0;*/
 }
 
 .name {

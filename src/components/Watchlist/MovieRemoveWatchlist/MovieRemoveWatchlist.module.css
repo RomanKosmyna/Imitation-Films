@@ -17,7 +17,11 @@
     border: 1px solid red;
     border-radius: 8px;
     padding: 0 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
 }
 
-@media (min-width: 680px) {
+.removeBtn:hover {
+    border: 1px solid #8B0000;
+    background-color: #8B0000;
 }
