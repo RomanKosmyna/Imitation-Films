@@ -22,3 +22,14 @@
     align-items: center;
     margin-top: 0.5rem;
 }
+
+@media (min-width: 915px) {
+    .movieContainer {
+        width: 65%;
+    }
+
+    .dataContainer {
+        width: 65%;
+        padding-left: 2rem;
+    }
+}

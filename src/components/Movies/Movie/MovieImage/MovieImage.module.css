@@ -14,3 +14,10 @@
     object-position: center top;
     border-radius: 0.7rem;
 }
+
+@media (min-width: 915px) {
+    .imageContainer {
+        width: 35%;
+        max-height: 350px;
+    }
+}
