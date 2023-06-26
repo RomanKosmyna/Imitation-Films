@@ -13,6 +13,7 @@ const MoviePagination = () => {
             const prevPage = parseInt(currentPage) - 1;
             query.set("page", prevPage.toString());
             setQuery(query);
+            window.scrollTo(0, 0);
         }
     };
 
@@ -23,6 +24,7 @@ const MoviePagination = () => {
             const nextPage = parseInt(currentPage) + 1;
             query.set("page", nextPage.toString());
             setQuery(query);
+            window.scrollTo(0, 0);
         }
     };
 
